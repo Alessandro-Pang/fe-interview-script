@@ -4,6 +4,34 @@
 
 ## 使用
 
+### 安装依赖
+
+```bash
+npm install
+```
+
+### 配置环境变量
+
+在项目根目录下创建 `.env.local` 文件，并配置以下环境变量：
+
+默认使用腾讯云大模型 API，如果要使用其他大模型 API，请修改 `.env.local` 文件中的 `OPEN_AI_API_URL` 和 `OPEN_AI_MODEL` 变量。
+
+```conf
+# 前端面试仓库本地路径
+PROJECT_BASE_PATH = ''
+
+# 大模型 api url 默认腾讯云大模型 API
+OPEN_AI_API_URL = 'https://api.lkeap.cloud.tencent.com/v1'
+
+# 大模型 api key
+OPEN_AI_API_KEY = ''
+
+# 设置模型，默认 腾讯云[DeepSeek-R1]
+OPEN_AI_MODEL = 'deepseek-r1'
+```
+
+### 使用命令行工具
+
 ```bash
 node index --<command> <options>
 
