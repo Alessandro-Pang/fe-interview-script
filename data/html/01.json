@@ -1,0 +1,67 @@
+[
+  {
+    "question": "DOCTYPE声明的作用解析",
+    "description": "请详细说明HTML文档中<!DOCTYPE>声明的作用机制，包括如何影响浏览器的渲染模式选择，以及不同文档类型（如HTML5与HTML4）对页面解析规则的差异影响。",
+    "tag": ["HTML基础", "渲染机制"]
+  },
+  {
+    "question": "HTML文档head核心结构",
+    "description": "请列举HTML文档中<head>标签必须包含的三个基础子元素，并说明每个元素的必要性。同时解释<meta charset>和<title>标签在SEO中的作用。",
+    "tag": ["HTML基础", "文档结构"]
+  },
+  {
+    "question": "src与href属性差异对比",
+    "description": "请从资源加载机制、应用场景和浏览器处理方式三个方面，对比HTML元素中src属性与href属性的核心区别，并举例说明两者的典型使用场景。",
+    "tag": ["HTML属性", "资源加载"]
+  },
+  {
+    "question": "script标签加载策略",
+    "description": "请绘制async与defer属性的执行时序图，说明两者在脚本下载、文档解析和脚本执行阶段的差异，并给出不同场景下的最佳实践建议。",
+    "tag": ["脚本加载", "性能优化"]
+  },
+  {
+    "question": "HTML语义化实现原则",
+    "description": "请通过具体示例说明语义化HTML的三大核心价值，并对比<div>与<article>、<b>与<strong>、<i>与<em>等标签的语义差异及其对无障碍访问的影响。",
+    "tag": ["语义化", "可访问性"]
+  },
+  {
+    "question": "HTML元素分类标准",
+    "description": "请根据W3C规范分类标准，列举至少5个块级元素、5个行内元素和3个空元素（void elements），并解释空元素在闭合语法上的特殊处理规则。",
+    "tag": ["元素分类", "语法规范"]
+  },
+  {
+    "question": "HTML5新特性全景解读",
+    "description": "请从语义标签、多媒体支持、存储方案、图形渲染和API扩展五个维度，系统阐述HTML5相较于HTML4的核心改进，并重点说明Canvas与SVG的技术差异及应用场景。",
+    "tag": ["HTML5特性", "版本对比"]
+  },
+  {
+    "question": "响应式图像实现方案",
+    "description": "请解析img标签的srcset属性和sizes属性的协同工作机制，并对比基于<picture>元素的art direction方案与分辨率切换方案的适用场景差异。",
+    "tag": ["HTML5特性", "响应式设计"]
+  },
+  {
+    "question": "离线存储技术实现",
+    "description": "请详述Application Cache的工作原理，包括manifest文件结构、资源更新流程和浏览器缓存策略，并说明Service Worker相比传统离线存储的技术优势。",
+    "tag": ["HTML5特性", "离线存储"]
+  },
+  {
+    "question": "iframe应用场景分析",
+    "description": "请列举iframe在跨域通信、广告嵌入和微前端架构中的典型应用场景，并分析其可能导致的性能问题、安全风险及对应的优化解决方案。",
+    "tag": ["嵌入技术", "性能优化"]
+  },
+  {
+    "question": "表单元素关联技术",
+    "description": "请通过代码示例演示label标签的两种关联方式（for/id隐式关联与显式包裹关联），并说明其在提升可访问性和移动端用户体验方面的具体表现。",
+    "tag": ["表单元素", "可访问性"]
+  },
+  {
+    "question": "meta标签功能解析",
+    "description": "请分类说明viewport、http-equiv、og:type等meta标签的具体功能，并演示如何通过meta标签实现iOS WebApp全屏模式和Android状态栏样式定制。",
+    "tag": ["SEO优化", "移动适配"]
+  },
+  {
+    "question": "语义化标签对比",
+    "description": "请对比说明<h1>与<title>在页面结构中的层级关系，以及两者在搜索引擎结果展示和屏幕阅读器处理方式上的差异表现。",
+    "tag": ["语义化", "SEO优化"]
+  }
+]

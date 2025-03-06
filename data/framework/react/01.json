@@ -1,0 +1,177 @@
+[
+  {
+    "question": "React设计理念与核心优势",
+    "description": "请阐述React的核心设计理念，如组件化、声明式编程的特点，并解释虚拟DOM如何提升渲染性能及其在前端开发中的实际优势？",
+    "tag": ["React基础", "设计哲学", "虚拟DOM"]
+  },
+  {
+    "question": "虚拟DOM原理与Diff算法优化",
+    "description": "详细描述虚拟DOM的生成过程，React中Diff算法的O(n)复杂度优化策略，以及`key`属性在列表渲染中的关键作用？",
+    "tag": ["虚拟DOM", "Diff算法", "性能优化"]
+  },
+  {
+    "question": "React与Vue对比分析",
+    "description": "从设计哲学（灵活性与约定）、响应式机制（单向数据流与双向绑定）、生态系统等方面对比React与Vue的异同？请举例说明适用场景的差异。",
+    "tag": ["框架对比", "响应式机制", "生态系统"]
+  },
+  {
+    "question": "Fiber架构核心思想",
+    "description": "Fiber架构如何通过可中断渲染和时间切片（Time Slicing）解决传统React的渲染阻塞问题？请结合异步渲染（Concurrent Mode）说明其实现原理？",
+    "tag": ["Fiber架构", "性能优化", "并发模式"]
+  },
+  {
+    "question": "类组件与函数组件区别",
+    "description": "对比React类组件与函数组件在生命周期管理、状态逻辑（如`this.state`与`useState`）以及性能优化（如Hooks）上的主要差异？",
+    "tag": ["组件类型", "状态管理", "Hooks"]
+  },
+  {
+    "question": "React生命周期阶段与方法",
+    "description": "列举React类组件的生命周期阶段（挂载、更新、卸载）及其对应方法（如`componentDidMount`、`shouldComponentUpdate`），并说明各方法的典型使用场景？",
+    "tag": ["生命周期", "类组件", "阶段方法"]
+  },
+  {
+    "question": "React生命周期变更原因",
+    "description": "为何React废弃了`componentWillMount`、`componentWillReceiveProps`等生命周期方法？请从Fiber架构的异步渲染特性解释其不安全性及替代方案？",
+    "tag": ["生命周期弃用", "Fiber兼容性", "最佳实践"]
+  },
+  {
+    "question": "React组件通信方式",
+    "description": "React中父子组件如何通过props传递数据？子组件如何向父组件传递信息？兄弟组件或跨层级组件有哪些通信方案（如状态提升、Context API、Redux）？请说明不同场景下的选择依据。",
+    "tag": ["组件通信", "状态管理", "设计模式"]
+  },
+  {
+    "question": "受控与非受控组件区别",
+    "description": "受控组件和非受控组件在表单处理中的核心区别是什么？请通过输入框示例说明两者的实现方式及适用场景（如动态验证依赖状态 vs 直接操作DOM元素）。",
+    "tag": ["表单处理", "状态绑定", "DOM操作"]
+  },
+  {
+    "question": "Redux设计思想与工作流程",
+    "description": "Redux的核心设计思想（单一数据源、纯函数Reducer）如何保证状态可预测性？请描述从`dispatch(action)`到状态更新的完整流程，并解释中间件（如`redux-thunk`）如何处理异步逻辑？",
+    "tag": ["Redux原理", "状态管理", "中间件机制"]
+  },
+  {
+    "question": "Redux与Mobx对比分析",
+    "description": "对比Redux（命令式、单向数据流）与Mobx（响应式、依赖追踪）的差异，说明在项目复杂度、维护成本、开发体验上的权衡策略？",
+    "tag": ["状态管理对比", "响应式编程", "设计范式"]
+  },
+  {
+    "question": "Context API使用与限制",
+    "description": "Context API适用于哪些数据传递场景？其性能问题如何产生（如频繁更新的数据）？请说明如何结合`useMemo`或状态管理库优化多层组件的数据传递？",
+    "tag": ["跨组件通信", "性能优化", "Context机制"]
+  },
+  {
+    "question": "React Hooks核心原理",
+    "description": "React Hooks如何让函数组件具备状态管理能力？请从闭包和链表存储的角度解释Hooks（如`useState`）的内部实现机制及其对类组件生命周期的替代方案？",
+    "tag": ["Hooks原理", "函数组件", "状态管理"]
+  },
+  {
+    "question": "常用Hooks使用场景",
+    "description": "举例说明`useState`、`useEffect`、`useContext`的典型使用场景。例如，如何通过`useEffect`处理组件挂载后的数据请求和清理操作？",
+    "tag": ["Hooks实践", "副作用处理", "状态管理"]
+  },
+  {
+    "question": "useMemo与useCallback优化原理",
+    "description": "如何通过`useMemo`缓存计算结果和`useCallback`缓存函数引用，避免子组件不必要的重新渲染？请结合依赖项数组说明其性能优化条件？",
+    "tag": ["性能优化", "缓存策略", "Hooks"]
+  },
+  {
+    "question": "自定义Hooks实现与规范",
+    "description": "如何将通用逻辑（如数据请求、事件监听）抽象为自定义Hook？请以`useFetch`为例说明开发规范（命名约定、依赖管理）及如何避免闭包陷阱？",
+    "tag": ["逻辑复用", "自定义Hooks", "代码抽象"]
+  },
+  {
+    "question": "避免不必要的渲染策略",
+    "description": "列举3种避免React组件不必要渲染的方法，如类组件中的`shouldComponentUpdate`、函数组件中的`React.memo`，并解释其底层浅比较的原理与限制？",
+    "tag": ["性能优化", "渲染控制", "浅比较"]
+  },
+  {
+    "question": "React性能分析工具",
+    "description": "如何使用React DevTools的Profiler分析组件渲染性能？结合代码分割（Code Splitting）说明如何减少首屏加载时间？",
+    "tag": ["性能分析", "工具使用", "代码分割"]
+  },
+  {
+    "question": "Immutable.js在React中的作用",
+    "description": "Immutable.js如何通过不可变数据优化React的Diff算法性能？在Redux中结合`combineReducers`使用时需要注意哪些状态更新规范？",
+    "tag": ["不可变数据", "性能优化", "状态管理"]
+  },
+  {
+    "question": "React合成事件机制",
+    "description": "React的合成事件（SyntheticEvent）系统如何实现事件委托？请对比原生事件与合成事件的区别，并解释为何要设计这一抽象层（如跨浏览器兼容性）？",
+    "tag": ["事件机制", "性能优化", "浏览器兼容"]
+  },
+  {
+    "question": "React服务端渲染实现与优化",
+    "description": "如何通过Next.js实现React服务端渲染（SSR）？请描述Hydration（注水）过程的作用，并列举SSR中常见的性能优化手段（如流式渲染、静态生成）？",
+    "tag": ["SSR", "Next.js", "性能优化"]
+  },
+  {
+    "question": "React Portal应用场景",
+    "description": "React Portal的主要用途是什么？举例说明如何通过`createPortal`将组件渲染到DOM树外（如全局弹窗Modal），并解释其与普通子组件渲染的差异？",
+    "tag": ["DOM操作", "组件设计", "弹窗管理"]
+  },
+  {
+    "question": "错误边界实现与使用",
+    "description": "如何通过`componentDidCatch`和`static getDerivedStateFromError`实现错误边界（Error Boundary）？请说明其对子组件JavaScript错误的捕获范围及使用限制（如无法捕获异步错误）？",
+    "tag": ["错误处理", "组件生命周期", "容错机制"]
+  },
+  {
+    "question": "React Router原理与配置",
+    "description": "React Router的`HashRouter`和`BrowserRouter`在路由实现上有何区别？如何配置动态路由（如`/user/:id`）并获取参数？请说明`useParams`钩子的作用？",
+    "tag": ["路由管理", "SPA", "URL解析"]
+  },
+  {
+    "question": "Redux中间件原理与常用库",
+    "description": "Redux中间件的核心原理是什么？如何通过`applyMiddleware`集成`redux-thunk`处理异步action或`redux-saga`管理副作用？请描述中间件链式调用的执行顺序？",
+    "tag": ["中间件机制", "异步处理", "Redux扩展"]
+  },
+  {
+    "question": "Redux状态持久化方案",
+    "description": "如何通过`redux-persist`库实现Redux状态持久化？请说明其与LocalStorage/SessionStorage的集成步骤及数据序列化注意事项？",
+    "tag": ["状态管理", "数据持久化", "本地存储"]
+  },
+  {
+    "question": "React项目性能优化手段",
+    "description": "列举3种React项目中的性能优化手段（如虚拟列表优化长列表渲染、React.lazy实现懒加载），并说明如何通过CDN加速静态资源加载？",
+    "tag": ["性能优化", "懒加载", "资源加速"]
+  },
+  {
+    "question": "组件库设计原则与实现",
+    "description": "设计React组件库时应遵循哪些核心原则（如可复用性、Props接口设计）？如何通过CSS-in-JS或CSS Modules实现样式隔离？",
+    "tag": ["组件设计", "可复用性", "样式隔离"]
+  },
+  {
+    "question": "React项目常见问题解决",
+    "description": "在大型React项目中，如何避免内存泄漏（如未清除定时器）？请提供复杂组件拆分的策略（如容器组件与展示组件分离）及状态管理混乱的解决方案？",
+    "tag": ["问题排查", "内存管理", "组件拆分"]
+  },
+  {
+    "question": "React与Vue核心区别",
+    "description": "从模板语法（JSX vs 模板）、响应式机制（单向数据流 vs 数据劫持）、生态系统（社区规模与官方库集成度）三个维度对比React与Vue的核心差异，并说明各自的适用场景（如复杂应用 vs 快速开发）？",
+    "tag": ["框架对比", "设计哲学", "生态系统"]
+  },
+  {
+    "question": "Redux与Vuex异同分析",
+    "description": "Redux与Vuex均基于Flux架构，但实现上有何不同？例如Redux强调纯函数与单一Store，而Vuex通过Mutation同步修改状态。请对比两者的Action处理逻辑与异步支持方案？",
+    "tag": ["状态管理对比", "Flux架构", "设计模式"]
+  },
+  {
+    "question": "React Native核心原理",
+    "description": "React Native如何通过Bridge实现JavaScript与原生平台（iOS/Android）的通信？请描述JS线程与UI线程的分离机制及其对性能的影响（如异步通信延迟）？",
+    "tag": ["跨平台开发", "线程模型", "性能瓶颈"]
+  },
+  {
+    "question": "RN混合开发兼容性问题",
+    "description": "在React Native与原生代码混合开发时，可能遇到哪些兼容性问题？例如热更新限制（如原生模块变更）、复杂动画性能不足，如何通过原生模块封装或优化策略解决？",
+    "tag": ["混合开发", "热更新", "性能优化"]
+  },
+  {
+    "question": "Next.js核心功能与场景",
+    "description": "Next.js的核心功能如SSR、SSG、API Routes分别适用于哪些场景？例如电商首页SEO优化选择SSR，文档站点使用SSG，如何通过`getServerSideProps`和`getStaticProps`配置？",
+    "tag": ["Next.js", "服务端渲染", "静态生成"]
+  },
+  {
+    "question": "React新特性：并发与Suspense",
+    "description": "React的并发渲染（Concurrent Rendering）如何通过时间切片优化用户体验？Suspense组件在数据加载场景下如何实现优雅的过渡效果（如骨架屏占位）？",
+    "tag": ["并发模式", "数据加载", "用户体验"]
+  }
+]

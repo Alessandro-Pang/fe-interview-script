@@ -1,0 +1,142 @@
+[
+  {
+    "question": "Vue3与Vue2响应式原理差异",
+    "description": "Vue3采用Proxy API实现响应式系统，而Vue2基于Object.defineProperty。请从检测能力（如新增/删除属性）、数组处理、性能优化等角度对比两者的实现差异及改进意义。",
+    "tag": ["响应式原理", "Proxy", "性能优化"]
+  },
+  {
+    "question": "Proxy替代Object.defineProperty的原因",
+    "description": "为何Vue3放弃Object.defineProperty而全面转向Proxy？请列举Proxy在深层对象监听、数组索引修改、动态属性增删等方面的优势，并说明其对Vue响应式系统能力的提升。",
+    "tag": ["Proxy原理", "数据劫持", "框架演进"]
+  },
+  {
+    "question": "reactive与ref的核心区别",
+    "description": "解释reactive()和ref()在响应式数据类型处理上的根本差异：为何ref需要.value访问？什么情况下必须使用ref处理基本类型数据？给出两者在对象包装场景下的转换关系示例。",
+    "tag": ["响应式API", "数据类型", "值包装"]
+  },
+  {
+    "question": "reactive处理基本类型的限制",
+    "description": "尝试用reactive()创建字符串或数字类型的响应式变量会导致什么问题？Vue3的响应式系统为何强制要求reactive参数必须为对象类型？",
+    "tag": ["类型约束", "响应式API", "错误处理"]
+  },
+  {
+    "question": "watch与watchEffect的差异",
+    "description": "从依赖收集方式、立即执行策略、回调参数等维度对比watch和watchEffect的行为差异。在处理多个关联状态变化时，如何选择更适合的监听器以优化性能？",
+    "tag": ["副作用管理", "依赖追踪", "性能优化"]
+  },
+  {
+    "question": "Options API与Composition API架构对比",
+    "description": "分析两种API设计范式的核心差异：为何Composition API更利于逻辑复用？举例说明基于功能组织的代码如何解决Options API在复杂组件中的碎片化问题。",
+    "tag": ["架构模式", "代码组织", "逻辑复用"]
+  },
+  {
+    "question": "组合式API常用方法解析",
+    "description": "详细说明ref、reactive、computed、provide/inject等组合式API的核心作用。为何在异步请求场景中需特别注意ref的.value赋值时机？",
+    "tag": ["组合式API", "响应式基础", "状态管理"]
+  },
+  {
+    "question": "script setup语法糖的优势",
+    "description": "<script setup>如何通过编译时转换简化组件代码？分析其自动暴露变量、顶级绑定、编译器宏支持等特性对开发效率的提升作用。",
+    "tag": ["语法糖", "编译优化", "开发体验"]
+  },
+  {
+    "question": "组合式API生命周期变化",
+    "description": "对比Options API的生命周期选项，说明组合式API中onMounted、onUpdated等钩子的命名规则变化，并解释beforeCreate和created在setup中的替代方案。",
+    "tag": ["生命周期", "钩子函数", "迁移适配"]
+  },
+  {
+    "question": "组合式API逻辑复用实现",
+    "description": "如何通过自定义组合函数（composable）实现业务逻辑复用？以鼠标跟踪器或API请求为例，演示将逻辑抽取为独立函数并在多个组件中复用的完整流程。",
+    "tag": ["逻辑抽象", "代码复用", "自定义Hook"]
+  },
+  {
+    "question": "Vue3的Tree shaking实现原理",
+    "description": "Vue3如何通过ES模块静态分析实现Tree shaking优化？请结合编译器标记和API设计，举例说明如keep-alive等未使用功能如何被自动移除，并对比Vue2的全局API设计对此优化的阻碍。",
+    "tag": ["打包优化", "模块化", "ES Modules"]
+  },
+  {
+    "question": "Fragment特性的多根节点支持",
+    "description": "Vue3的Fragment特性如何解决Vue2的模板单根限制？从虚拟DOM结构变化的角度，说明多根节点组件在patch过程中的处理方式及其对CSS布局的影响。",
+    "tag": ["模板语法", "虚拟DOM", "组件设计"]
+  },
+  {
+    "question": "Teleport组件的DOM传送场景",
+    "description": "使用Teleport组件将模态框传送到body外层时，如何避免z-index层级问题？请分析其实现原理，并说明to属性支持CSS选择器时的注意事项。",
+    "tag": ["DOM操作", "组件架构", "可访问性"]
+  },
+  {
+    "question": "Suspense组件的异步解决方案",
+    "description": "Suspense组件如何通过插槽机制协调异步组件加载状态？请结合fallback插槽和onErrorCaptured生命周期，说明错误边界处理与加载骨架屏的实现方案。",
+    "tag": ["异步组件", "加载状态", "错误处理"]
+  },
+  {
+    "question": "静态提升(Static Hoisting)优化原理",
+    "description": "Vue3编译器如何通过标记静态节点实现hoisting优化？对比编译前后的渲染函数代码，解释该优化对虚拟DOM diff算法性能提升的具体贡献。",
+    "tag": ["编译优化", "渲染性能", "虚拟DOM"]
+  },
+  {
+    "question": "Vue3组件通信方式的变化",
+    "description": "为何Vue3移除$on/$off等事件接口？从事件总线模式与响应式系统的冲突角度，说明推荐使用mitt等第三方库替代EventBus方案的设计考量。",
+    "tag": ["组件通信", "事件系统", "API变更"]
+  },
+  {
+    "question": "mitt库与EventBus的核心差异",
+    "description": "对比mitt库的发布订阅模式与Vue2的EventBus实现，说明前者在TypeScript支持、内存泄漏预防、无实例化等方面的改进设计。",
+    "tag": ["事件总线", "第三方库", "TypeScript"]
+  },
+  {
+    "question": "Modal组件设计（组合API+Teleport）",
+    "description": "如何利用组合式API封装模态框状态逻辑，并通过Teleport实现动态挂载？请给出遮罩层点击关闭和Esc键关闭的功能实现方案及其可复用性设计。",
+    "tag": ["组件封装", "逻辑复用", "可访问性"]
+  },
+  {
+    "question": "自定义指令API的生命周期变化",
+    "description": "Vue3中自定义指令的生命周期钩子如何从Vue2的bind/update重命名为mounted/updated？请说明inserted钩子被合并后的新触发逻辑及参数变化。",
+    "tag": ["自定义指令", "生命周期", "迁移适配"]
+  },
+  {
+    "question": "v-if与v-for优先级变化(Vue3)",
+    "description": "在Vue3中v-if的优先级高于v-for，这与Vue2的行为相反。请解释这种改变如何避免无效循环渲染，并给出需要同时使用时的正确写法（如外层包裹template或使用计算属性过滤数据）",
+    "tag": ["指令优先级", "渲染优化", "迁移适配"]
+  },
+  {
+    "question": "v-memo指令的缓存优化作用",
+    "description": "新增的v-memo指令如何通过记忆虚拟DOM子树提升静态内容渲染性能？请举例说明在表格行渲染场景中，如何通过指定依赖数组实现条件性跳过更新。",
+    "tag": ["性能优化", "指令原理", "虚拟DOM"]
+  },
+  {
+    "question": "渲染函数h函数的导入变化",
+    "description": "为何Vue3要求手动导入h函数而非自动全局注入？从模块化设计和Tree shaking优化的角度，说明这种改变对自定义渲染器开发的影响。",
+    "tag": ["渲染函数", "模块化", "API变更"]
+  },
+  {
+    "question": "组合式API的TS类型推导改进",
+    "description": "组合式API如何通过类型推断自动推导ref<string>等响应式变量类型？对比Options API的选项类型声明，说明在setup函数中类型提示的准确性提升。",
+    "tag": ["TypeScript", "类型推断", "开发体验"]
+  },
+  {
+    "question": "defineProps/defineEmits类型声明",
+    "description": "在<script setup>中如何通过泛型语法定义带类型的props和emits？请演示使用接口继承和字面量类型实现复杂类型校验的代码示例。",
+    "tag": ["类型声明", "组件规范", "TS集成"]
+  },
+  {
+    "question": "Vue3的IE11兼容性方案",
+    "description": "若需在Vue3中支持IE11，需配置哪些polyfill（如Proxy/WeakMap）？解释@vue/cli构建时如何通过babel.config.js的transpileDeps选项处理依赖转换。",
+    "tag": ["浏览器兼容", "构建配置", "polyfill"]
+  },
+  {
+    "question": "Vue3移除API的替代方案",
+    "description": "列举Vue3移除的过滤器(filter)、$children等特性的官方推荐替代方案。为何事件总线模式被建议改用provide/inject或Vuex/Pinia替代？",
+    "tag": ["API迁移", "代码重构", "最佳实践"]
+  },
+  {
+    "question": "组合式API+Teleport实现Modal",
+    "description": "结合Teleport的to=\"body\"属性和组合式API的状态管理，演示可复用的模态框组件实现。包括键盘事件监听、焦点管理及动画过渡的最佳实践。",
+    "tag": ["组件设计", "DOM传送", "可访问性"]
+  },
+  {
+    "question": "组件库Tree shaking优化策略",
+    "description": "如何通过ES模块导出、按需导入设计配合Vite的rollup打包，实现组件库的Tree shaking效果？请给出按组件目录分包构建的具体配置示例。",
+    "tag": ["性能优化", "模块化", "构建工具"]
+  }
+]

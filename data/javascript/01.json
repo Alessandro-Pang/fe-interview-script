@@ -1,0 +1,167 @@
+[
+  {
+    "question": "JavaScript数据类型分类及差异",
+    "description": "请列举JavaScript中的所有数据类型，并详细说明基本数据类型（原始类型）与引用类型在内存存储方式、变量赋值行为以及值比较方式上的本质区别。",
+    "tag": ["数据类型", "内存管理"]
+  },
+  {
+    "question": "类型检测方法对比",
+    "description": "请解释typeof操作符和instanceof运算符的工作原理差异，并说明在判断变量是否为数组时，为什么推荐使用Array.isArray()而非其他方法？",
+    "tag": ["类型检测", "操作符"]
+  },
+  {
+    "question": "null与undefined的语义差异",
+    "description": "请说明null和undefined在语义上的区别，以及在何种场景下需要使用void 0来安全获取undefined值？请举例说明可能存在的风险场景。",
+    "tag": ["值类型", "基础概念"]
+  },
+  {
+    "question": "typeof null的返回值问题",
+    "description": "为什么typeof null会返回'object'？请从JavaScript语言设计的历史背景和ECMAScript规范角度解释这一现象的成因。",
+    "tag": ["类型检测", "历史遗留"]
+  },
+  {
+    "question": "对象比较的特殊情况",
+    "description": "请对比Object.is()方法与==、===操作符的比较规则，重点说明它们在处理+0/-0和NaN时的行为差异，并给出具体示例。",
+    "tag": ["操作符", "对象方法"]
+  },
+  {
+    "question": "NaN检测方法差异",
+    "description": "请解释isNaN()与Number.isNaN()的实现机制差异，为什么在ES6中需要引入Number.isNaN()方法？请举例说明两者的不同检测结果。",
+    "tag": ["类型检测", "数值运算"]
+  },
+  {
+    "question": "隐式类型转换规则",
+    "description": "请详细描述JavaScript中不同类型值在参与字符串拼接、数值运算和布尔判断时的隐式转换规则，并举例说明可能产生意外结果的转换场景。",
+    "tag": ["类型转换"]
+  },
+  {
+    "question": "浮点数精度问题解决方案",
+    "description": "为什么在JavaScript中0.1加0.2不等于0.3？请从IEEE 754标准角度解释原因，并给出两种以上解决该精度问题的实际方案。",
+    "tag": ["数值运算", "浮点精度"]
+  },
+  {
+    "question": "相等运算符的类型转换",
+    "description": "请详细说明==操作符在进行比较时的强制类型转换规则，并通过具体示例解释与===操作符在比较不同数据类型时的行为差异。",
+    "tag": ["操作符", "类型转换"]
+  },
+  {
+    "question": "字符串拼接触发条件",
+    "description": "请解释JavaScript中+操作符在什么情况下会触发字符串拼接操作，并说明当操作数包含对象类型时，其valueOf()和toString()方法的调用顺序如何影响最终结果？",
+    "tag": ["操作符", "类型转换"]
+  },
+  {
+    "question": "基本类型方法调用机制",
+    "description": "为什么JavaScript中的基本数据类型可以直接调用对象方法（如'abc'.length）？请详细说明其底层实现机制和临时包装对象的创建销毁过程。",
+    "tag": ["数据类型", "对象模型"]
+  },
+  {
+    "question": "对象拷贝方法对比",
+    "description": "请说明Object.assign()与对象扩展运算符的异同点，包括对setter方法的处理差异，并解释为什么它们都属于浅拷贝的实现方式？",
+    "tag": ["对象方法", "拷贝机制"]
+  },
+  {
+    "question": "Map与Object的适用场景",
+    "description": "请从键类型、迭代顺序、性能表现等方面对比Map和Object的核心区别，并列举三个适合使用Map数据结构的典型应用场景。",
+    "tag": ["数据结构", "对象模型"]
+  },
+  {
+    "question": "空对象检测与对象合并",
+    "description": "如何准确判断一个对象是否为空对象？请列举至少两种实现方法并说明其优缺点。同时请解释Object.assign()在合并多个对象时的属性覆盖规则。",
+    "tag": ["对象操作"]
+  },
+  {
+    "question": "原型链类型检测",
+    "description": "请说明instanceof操作符的检测原理，以及在跨窗口环境（如iframe）中使用该方法可能存在的问题及解决方案。",
+    "tag": ["原型", "类型检测"]
+  },
+  {
+    "question": "数组方法分类与应用",
+    "description": "请分类列举JavaScript数组的常用原生方法，包括修改原数组的方法和返回新数组的方法，并说明splice()与slice()的核心差异。",
+    "tag": ["数组操作"]
+  },
+  {
+    "question": "数组操作副作用对比",
+    "description": "请说明splice()和slice()方法是否修改原数组，并给出三种不同删除数组最后一个元素的方法实现。",
+    "tag": ["数组操作"]
+  },
+  {
+    "question": "遍历方法中断控制",
+    "description": "对比forEach、for...of和传统for循环在遍历数组时的中断控制能力，请说明为什么某些方法无法使用break中断，并提供对应的替代解决方案。",
+    "tag": ["数组操作", "循环控制"]
+  },
+  {
+    "question": "类数组转换技术",
+    "description": "什么是类数组对象？请以arguments对象为例，说明两种将其转换为真实数组的方法及其兼容性差异。",
+    "tag": ["数组操作", "函数"]
+  },
+  {
+    "question": "arguments对象遍历",
+    "description": "为什么说arguments对象是类数组结构？请给出三种遍历arguments对象的方式并说明现代JavaScript中的最佳实践。",
+    "tag": ["函数", "数组操作"]
+  },
+  {
+    "question": "函数加载模式差异",
+    "description": "请解释JavaScript中函数的延迟加载（Lazy Loading）与异步加载（Async Loading）的具体实现方式，并比较两者在性能优化和代码执行时机上的主要区别。",
+    "tag": ["函数", "性能优化"]
+  },
+  {
+    "question": "严格模式限制特性",
+    "description": "使用'use strict'指令会触发哪些JavaScript行为的变更？请列举五个严格模式下的限制性规则，并说明为什么在函数内部使用严格模式时需要考虑作用域问题？",
+    "tag": ["语法特性", "严格模式"]
+  },
+  {
+    "question": "AJAX核心实现原理",
+    "description": "请描述XMLHttpRequest对象的工作原理，并手动编写一个支持GET/POST方法、错误处理和超时设置的AJAX请求实现代码框架。",
+    "tag": ["网络请求", "异步编程"]
+  },
+  {
+    "question": "请求库特性对比",
+    "description": "从API设计、错误处理、请求取消、浏览器兼容性等方面，对比原生AJAX、axios和fetch API的核心差异，并说明为什么现代项目更倾向于使用axios库？",
+    "tag": ["网络请求", "工具库"]
+  },
+  {
+    "question": "DOM与BOM操作场景",
+    "description": "请分别说明DOM和BOM的定义范畴，列举至少五个常见的DOM操作方法，并解释如何通过BOM对象实现页面跳转和屏幕尺寸获取。",
+    "tag": ["DOM", "BOM"]
+  },
+  {
+    "question": "可视区域检测方法",
+    "description": "请描述Intersection Observer API的工作原理，并对比传统基于getBoundingClientRect的检测方式在性能和维护性上的优劣。",
+    "tag": ["DOM", "性能优化"]
+  },
+  {
+    "question": "鼠标事件冒泡差异",
+    "description": "请通过事件传播机制解释mouseover与mouseenter事件的核心区别，并绘制事件触发流程图说明当鼠标从父元素移动到子元素时两者的不同行为。",
+    "tag": ["事件机制", "DOM"]
+  },
+  {
+    "question": "JSON与对象转换规范",
+    "description": "请说明JSON.stringify()方法在序列化JavaScript对象时的特殊处理规则，包括对undefined、函数和循环引用的处理方式，并解释为什么JSON不是JavaScript对象的严格子集？",
+    "tag": ["JSON", "数据格式"]
+  },
+  {
+    "question": "URI编码方法对比",
+    "description": "请通过示例说明escape、encodeURI和encodeURIComponent在处理空格、中文字符和保留字符（如&、=）时的编码结果差异，并指出在URL参数传递时应该选用哪种编码方式？",
+    "tag": ["编码", "网络请求"]
+  },
+  {
+    "question": "BigInt的数值处理",
+    "description": "请解释BigInt类型出现的背景及其与Number类型的互操作性限制，并演示如何安全地进行BigInt与字符串之间的转换操作。",
+    "tag": ["数值运算", "ES6"]
+  },
+  {
+    "question": "const声明特性解析",
+    "description": "虽然const声明的变量不能重新赋值，但为什么对象的属性仍然可以修改？请从内存模型角度解释这种现象，并说明如何实现真正不可变的对象。",
+    "tag": ["变量声明", "ES6"]
+  },
+  {
+    "question": "迭代协议实现差异",
+    "description": "请对比for...in和for...of循环的底层实现机制，并给出如何让普通对象支持for...of遍历的具体实现方案（需包含Symbol.iterator的实现示例）。",
+    "tag": ["迭代器", "对象"]
+  },
+  {
+    "question": "字符串截取方法区别",
+    "description": "请通过参数说明和示例演示substring()与substr()方法的核心差异，并指出为什么MDN文档建议开发者避免使用substr()方法？",
+    "tag": ["字符串", "API设计"]
+  }
+]

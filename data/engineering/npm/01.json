@@ -1,0 +1,92 @@
+[
+  {
+    "question": "npm模块安装机制",
+    "description": "请解释执行`npm install`时，npm的依赖安装机制是如何工作的？包括依赖树解析、远程包下载流程以及`node_modules`目录的扁平化结构设计。",
+    "tag": ["依赖管理", "npm原理", "模块解析"]
+  },
+  {
+    "question": "package-lock.json的作用与影响",
+    "description": "`package-lock.json`文件的核心作用是什么？如果项目中没有该文件，可能导致哪些问题（如依赖版本不一致）？请说明其与语义化版本控制的关联。",
+    "tag": ["版本锁定", "依赖一致性", "版本冲突"]
+  },
+  {
+    "question": "package-lock.json与yarn.lock区别",
+    "description": "对比`package-lock.json`和`yarn.lock`的差异，包括文件格式、版本锁定策略以及安装行为的不同（如确定性依赖解析）。",
+    "tag": ["包管理工具对比", "锁定文件", "格式差异"]
+  },
+  {
+    "question": "npm缓存管理与配置",
+    "description": "npm的缓存机制是如何工作的？如何通过`npm cache clean`命令清除缓存或修改缓存路径？请说明缓存对安装性能的影响。",
+    "tag": ["缓存优化", "配置管理", "性能调优"]
+  },
+  {
+    "question": "依赖类型区别与使用场景",
+    "description": "解释`dependencies`、`devDependencies`、`peerDependencies`三者的区别，并举例说明各自适用的场景（如生产依赖、开发工具、插件宿主环境）。",
+    "tag": ["依赖分类", "环境区分", "包设计规范"]
+  },
+  {
+    "question": "optionalDependencies的应用场景",
+    "description": "在什么情况下应使用`optionalDependencies`？请举例说明其典型用途（如跨平台包依赖）及安装失败时的处理机制。",
+    "tag": ["可选依赖", "容错处理", "跨平台支持"]
+  },
+  {
+    "question": "检测项目依赖的方法",
+    "description": "如何快速确认项目中是否依赖某个特定包？请说明`npm ls <package>`命令的用法及`node_modules`目录的手动检查方式。",
+    "tag": ["依赖查询", "包检索", "项目分析"]
+  },
+  {
+    "question": "npm script生命周期钩子",
+    "description": "npm script的生命周期钩子（如`prepublish`、`postinstall`）有哪些？请说明它们在包发布、安装等流程中的触发时机。",
+    "tag": ["脚本钩子", "自动化流程", "事件触发"]
+  },
+  {
+    "question": "npm run命令执行流程",
+    "description": "执行`npm run xxx`时，npm如何解析并运行对应的脚本？请描述路径解析、环境变量注入及`node_modules/.bin`目录的作用。",
+    "tag": ["脚本执行", "路径管理", "环境变量"]
+  },
+  {
+    "question": "加速npm install的策略",
+    "description": "列举3种加速`npm install`过程的方法（如使用镜像源、缓存优化、`npm ci`命令），并说明其背后的原理。",
+    "tag": ["安装优化", "镜像配置", "CI/CD"]
+  },
+  {
+    "question": "npm install与npm ci的区别",
+    "description": "`npm install`与`npm ci`在依赖安装行为上有何本质区别？为何在CI/CD环境中推荐使用`npm ci`？",
+    "tag": ["安装策略", "版本锁定", "持续集成"]
+  },
+  {
+    "question": "npm包平滑升级策略",
+    "description": "如何在不引入破坏性变更的情况下平滑升级项目中的npm依赖？请结合`npm outdated`、`npm update`命令及语义化版本（SemVer）规范说明版本控制的最佳实践。",
+    "tag": ["版本管理", "依赖升级", "SemVer"]
+  },
+  {
+    "question": "npm包紧急Bug修复方法",
+    "description": "当第三方npm包存在紧急Bug时，如何快速临时修复？请说明通过修改`package.json`直接指向Git仓库分支、本地路径或使用`patch-package`打补丁的具体操作步骤。",
+    "tag": ["问题排查", "临时修复", "Git依赖"]
+  },
+  {
+    "question": "npm workspaces的用途与配置",
+    "description": "npm workspaces解决了哪些Monorepo场景下的痛点？如何通过`workspaces`字段配置多包管理，替代Lerna等工具？请举例说明依赖共享与脚本统一管理的实现方式。",
+    "tag": ["Monorepo", "工作区管理", "依赖优化"]
+  },
+  {
+    "question": "npm/Yarn/pnpm对比分析",
+    "description": "从安装速度、依赖存储策略（扁平化/硬链接）、生态兼容性等角度对比npm、Yarn和pnpm的优缺点，并说明各自的适用场景（如磁盘空间敏感型项目）。",
+    "tag": ["包管理工具对比", "性能优化", "生态兼容性"]
+  },
+  {
+    "question": "npm脚本参数传递规则",
+    "description": "为何在执行`npm run build -- --mode=prod`时需要添加双横线（--）？请解释npm参数解析机制及如何避免参数被错误截断。",
+    "tag": ["脚本参数", "命令行解析", "转义规则"]
+  },
+  {
+    "question": "npm publish生命周期钩子",
+    "description": "执行`npm publish`时触发的生命周期钩子有哪些？例如`prepublishOnly`和`postpublish`分别在何时执行？如何利用它们自动化构建或通知流程？",
+    "tag": ["包发布", "钩子函数", "自动化流程"]
+  },
+  {
+    "question": "package.json创建方法",
+    "description": "如何快速创建或初始化一个`package.json`文件？请说明`npm init`的交互式流程及手动编写时必须包含的核心字段（如`name`、`version`）。",
+    "tag": ["项目初始化", "配置管理", "CLI工具"]
+  }
+]

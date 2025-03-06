@@ -1,0 +1,207 @@
+[
+  {
+    "question": "CSS选择器类型与优先级机制",
+    "description": "请列举CSS的10种以上选择器类型（包括属性选择器、伪类选择器等），并详细说明选择器优先级计算规则。当!important、内联样式、ID选择器同时存在时，如何确定最终生效的样式？",
+    "tag": ["选择器", "优先级"]
+  },
+  {
+    "question": "盒模型与布局属性关系",
+    "description": "请通过盒模型示意图说明content-box与border-box的计算差异，并分析display、float、position三个核心布局属性的相互作用关系。当元素设置position:absolute后，其display值会发生什么变化？",
+    "tag": ["盒模型", "布局"]
+  },
+  {
+    "question": "现代布局方案对比",
+    "description": "请对比Flex布局与Grid布局的核心特性差异，说明flex:1的具体含义（flex-grow/flex-shrink/flex-basis的复合写法），并演示如何用Grid实现响应式卡片布局。",
+    "tag": ["Flex", "Grid", "响应式"]
+  },
+  {
+    "question": "元素隐藏技术方案",
+    "description": "请对比display:none、visibility:hidden、opacity:0、clip-path:inset(100%)四种隐藏方式在文档流占用、事件响应、过渡动画支持方面的差异，并说明各自的适用场景。",
+    "tag": ["视觉渲染", "性能优化"]
+  },
+  {
+    "question": "CSS动画实现原理",
+    "description": "请通过执行流程对比transition与animation的运作机制差异，说明如何通过@keyframes定义复杂动画序列，并解释will-change属性在动画性能优化中的作用原理。",
+    "tag": ["动画", "性能优化"]
+  },
+  {
+    "question": "层叠上下文与定位体系",
+    "description": "请解释z-index失效的常见场景（如父元素未创建层叠上下文），说明position:sticky的实现原理及其与fixed定位的区别，并绘制元素层叠顺序（stacking context）的规则示意图。",
+    "tag": ["定位", "层叠上下文"]
+  },
+  {
+    "question": "预处理器的工程化价值",
+    "description": "请对比Sass与Less在变量定义、混合宏、嵌套规则等方面的语法差异，说明CSS预处理器如何提升代码可维护性，并解释PostCSS在自动化前缀添加和代码压缩中的应用场景。",
+    "tag": ["预处理器", "工程化"]
+  },
+  {
+    "question": "移动端适配核心方案",
+    "description": "请通过视口设置（viewport meta）说明移动端适配的基本原理，对比rem布局与vw/vh布局的优缺点，并解释如何通过媒体查询实现不同设备下的响应式字体大小调整。",
+    "tag": ["响应式", "移动端"]
+  },
+  {
+    "question": "CSS性能优化策略",
+    "description": "请列举5种以上CSS渲染性能优化方案，包括选择器优化（避免嵌套过深）、重绘减少（transform替代top/left）、GPU加速（will-change）等，并说明浏览器渲染层合成（composite）的基本原理。",
+    "tag": ["性能优化", "渲染机制"]
+  },
+  {
+    "question": "经典布局问题解决方案",
+    "description": "请通过代码示例说明以下经典布局实现：1.圣杯布局与双飞翼布局的实现差异 2.水平垂直居中的5种方案对比 3.1px细线问题的设备像素比（DPR）解决方案 4.基于padding-top百分比的自适应正方形实现。",
+    "tag": ["布局", "经典问题"]
+  },
+  {
+    "question": "排版系统深度解析",
+    "description": "请解释line-height的数值类型（百分比/无单位值）对继承方式的影响，说明BFC的形成条件及其解决margin重叠的原理，并演示如何通过font-family设置系统级字体降级方案。",
+    "tag": ["排版", "BFC"]
+  },
+  {
+    "question": "CSS工程化实践",
+    "description": "请说明CSS Modules的实现原理及其作用域隔离机制，对比CSS-in-JS方案与传统预处理器方案的优缺点，并解释如何通过Stylelint进行CSS代码质量管控。",
+    "tag": ["工程化", "模块化"]
+  },
+  {
+    "question": "图形绘制高级技巧",
+    "description": "请演示如何通过CSS实现以下图形：1.利用border绘制三角形 2.通过clip-path创建扇形 3.使用linear-gradient实现条纹背景 4.借助伪元素实现悬浮阴影效果，并说明这些技术的浏览器兼容性处理方案。",
+    "tag": ["图形绘制", "高级技巧"]
+  },
+  {
+    "question": "现代CSS特性应用",
+    "description": "请说明CSS Variables（自定义属性）的作用域规则和JavaScript操作方式，演示:is()、:where()等新选择器的使用场景，并解释subgrid布局对复杂表格的实现优化。",
+    "tag": ["CSS3", "新特性"]
+  },
+  {
+    "question": "伪类与伪元素机制解析",
+    "description": "请从浏览器渲染流程角度解释伪类（如:hover）与伪元素（如::before）的本质区别，说明双冒号语法规范演变过程，并举例说明不设置content属性时伪元素的表现及影响。",
+    "tag": ["选择器", "渲染机制"]
+  },
+  {
+    "question": "浮动布局问题解决方案",
+    "description": "请通过BFC原理说明清除浮动的三种实现方式（clearfix、overflow:hidden、display:flow-root），对比clear属性中both与left/right值的适用场景差异，并分析现代布局方案替代浮动布局的技术趋势。",
+    "tag": ["布局", "BFC"]
+  },
+  {
+    "question": "层叠规则与定位失效",
+    "description": "请列举导致z-index失效的四种典型场景（如父级z-index为auto、未设置position属性），说明层叠上下文的创建条件，并通过堆叠顺序图解释static定位元素与浮动元素的层叠关系。",
+    "tag": ["定位", "层叠上下文"]
+  },
+  {
+    "question": "像素精确控制技术",
+    "description": "请说明0.5px线实现的四种方案（transform缩放、border-image、SVG、box-shadow），对比不同方案在Retina屏幕下的渲染效果差异，并解释CSS像素与设备像素比（DPR）的映射关系。",
+    "tag": ["移动端", "精确控制"]
+  },
+  {
+    "question": "字体渲染与缩放策略",
+    "description": "请分析浏览器最小字体限制（通常12px）的突破方案（transform缩放、SVG文本、-webkit-text-size-adjust），说明各方案在可访问性和SEO方面的影响，并演示通过rem单位实现全局字体缩放的最佳实践。",
+    "tag": ["排版", "移动端"]
+  },
+  {
+    "question": "CSS继承体系解析",
+    "description": "请列举10个可继承属性（如font-family）和10个不可继承属性（如margin），说明inherit关键字在重置不可继承属性时的作用，并演示通过all属性快速重置元素样式的应用场景。",
+    "tag": ["继承机制", "属性特性"]
+  },
+  {
+    "question": "现代选择器增强特性",
+    "description": "请演示:has()关系选择器的使用场景（如选择包含特定子元素的父级），说明:is()选择器的特异性计算规则，并解释为什么:focus-visible能提升键盘导航的可访问性。",
+    "tag": ["CSS4", "选择器"]
+  },
+  {
+    "question": "CSS性能检测方法",
+    "description": "请说明Chrome DevTools中Performance面板检测样式计算耗时的操作流程，演示如何通过CSS Triggers网站查询属性触发重排/重绘的情况，并列举三个易引发布局抖动的CSS属性及其优化方案。",
+    "tag": ["性能优化", "调试技巧"]
+  },
+  {
+    "question": "替换元素渲染特性",
+    "description": "请对比<img>与<div>在包含性替换元素方面的差异，说明固有尺寸（intrinsic size）的计算规则，并解释为什么textarea的尺寸设置需要同时控制CSS和rows/cols属性。",
+    "tag": ["渲染机制", "替换元素"]
+  },
+  {
+    "question": "CSS变量高级应用",
+    "description": "请演示通过CSS自定义属性实现主题切换的完整方案（包括JavaScript动态修改方法），说明@supports规则进行特性检测的语法，并解释var()函数的回退机制在渐进增强中的应用。",
+    "tag": ["CSS3", "工程化"]
+  },
+  {
+    "question": "媒体查询深度适配",
+    "description": "请说明如何通过媒体查询同时检测深色模式和屏幕方向，演示resolution媒体特性适配高DPI设备的方案，并解释Media Query Level 4中update-frequency特性对电子墨水屏的优化作用。",
+    "tag": ["响应式", "移动端"]
+  },
+  {
+    "question": "CSS数学表达式应用",
+    "description": "请对比calc()与min()/max()/clamp()函数的适用场景，演示通过clamp()实现视口单位字体平滑缩放，并解释在calc(100% - 20px)中百分比值的解析依据。",
+    "tag": ["CSS3", "响应式"]
+  },
+  {
+    "question": "CSS预处理器核心价值",
+    "description": "请对比Sass与Less在变量作用域、混合宏参数处理、循环控制语句等方面的实现差异，说明CSS预处理器如何通过嵌套语法提升代码可维护性，并演示使用@extend实现样式复用的性能优化方案。",
+    "tag": ["预处理器", "工程化"]
+  },
+  {
+    "question": "弹性布局弹性系数解析",
+    "description": "请解释flex-grow:0、flex-shrink:1、flex-basis:auto的默认值含义，说明当容器空间不足时flex-shrink的计算公式（加权收缩算法），并通过实例演示负flex-grow值的特殊应用场景。",
+    "tag": ["Flex", "布局计算"]
+  },
+  {
+    "question": "内联元素间隙消除方案",
+    "description": "请分析inline-block元素产生空白间隙的根本原因（HTML换行符解析），列举三种消除间隙的技术方案（font-size:0、负margin、HTML注释填充），并对比各方案在响应式布局中的适应性差异。",
+    "tag": ["布局", "渲染机制"]
+  },
+  {
+    "question": "CSS数学函数应用场景",
+    "description": "请演示如何通过calc()函数实现视口高度动态计算（如calc(100vh - 60px)），说明min()/max()函数在响应式布局中的边界控制作用，并解释clamp()函数如何实现字体大小的动态平滑过渡。",
+    "tag": ["CSS3", "响应式"]
+  },
+  {
+    "question": "浏览器渲染层优化策略",
+    "description": "请说明浏览器渲染层（Layer）的创建条件（transform、opacity等），分析will-change属性的正确使用场景，并解释如何通过Chrome DevTools的Layers面板检测复合层边界。",
+    "tag": ["渲染机制", "性能优化"]
+  },
+  {
+    "question": "CSS计数器高级应用",
+    "description": "请演示使用counter-reset/counter-increment实现复杂目录编号系统，说明@counter-style规则自定义列表符号的方法，并解释如何通过CSS计数器替代JavaScript实现简单统计功能。",
+    "tag": ["CSS3", "高级技巧"]
+  },
+  {
+    "question": "滚动驱动动画实现",
+    "description": "请说明Scroll-driven Animations规范的核心API（animation-timeline、view()函数），演示如何实现视口进入动画和滚动进度条动画，并对比与传统JavaScript滚动监听方案的技术优势。",
+    "tag": ["CSS4", "动画"]
+  },
+  {
+    "question": "容器查询技术实践",
+    "description": "请对比媒体查询与容器查询（@container）的应用场景差异，演示基于元素尺寸的响应式布局实现，并解释如何通过container-type属性定义查询容器。",
+    "tag": ["CSS4", "响应式"]
+  },
+  {
+    "question": "CSS作用域隔离方案",
+    "description": "请说明CSS Modules的哈希生成规则及其与Vue scoped属性的实现差异，分析Shadow DOM的样式封装原理，并演示使用@scope规则实现块级作用域样式的最佳实践。",
+    "tag": ["工程化", "模块化"]
+  },
+  {
+    "question": "颜色空间现代演进",
+    "description": "请对比rgb()与oklch()颜色空间的色域表现，说明color()函数扩展色域的原理，并演示使用相对颜色语法（from关键字）实现动态主题色生成。",
+    "tag": ["CSS4", "视觉设计"]
+  },
+  {
+    "question": "CSS逻辑属性适配",
+    "description": "请解释margin-inline-start与margin-left在RTL布局中的差异，演示使用逻辑属性（inline-size、inset）实现多语言布局适配，并说明:dir()伪类在双向排版中的应用场景。",
+    "tag": ["国际化", "现代CSS"]
+  },
+  {
+    "question": "视口单位动态计算",
+    "description": "请分析vh/vw单位在移动端浏览器地址栏可见性变化时的表现问题，说明dvh（dynamic viewport height）单位的解决原理，并演示使用@supports实现渐进增强的视口单位降级方案。",
+    "tag": ["移动端", "响应式"]
+  },
+  {
+    "question": "CSS后代选择器性能影响",
+    "description": "请从浏览器渲染引擎的匹配机制角度，解释为什么过于深层级的选择器（如div > ul li a span）可能影响页面性能，并给出选择器编写的最佳实践建议。",
+    "tag": ["选择器", "性能优化"]
+  },
+  {
+    "question": "CSS计数器实现步骤编号",
+    "description": "请演示如何通过counter-reset和counter-increment实现多级嵌套的步骤编号系统，并说明如何通过@counter-style自定义编号符号样式。",
+    "tag": ["CSS3", "高级技巧"]
+  },
+  {
+    "question": "CSS混合模式应用场景",
+    "description": "请说明mix-blend-mode和background-blend-mode属性的区别，演示如何通过混合模式实现图片滤镜效果，并分析其与Canvas混合模式的性能差异。",
+    "tag": ["CSS3", "视觉特效"]
+  }
+]

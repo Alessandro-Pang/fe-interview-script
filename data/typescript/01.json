@@ -1,0 +1,217 @@
+[
+  {
+    "question": "TypeScript基础类型种类",
+    "description": "列举TypeScript中常用的原始数据类型（如string/number/boolean）及其特殊类型（any/unknown）。如何通过类型注解明确定义变量类型？",
+    "tag": ["基础类型", "类型注解", "类型安全"]
+  },
+  {
+    "question": "void类型的应用场景",
+    "description": "在函数返回值类型标注中，void与undefined有何区别？为什么说void类型变量只能赋予undefined（严格模式除外）？",
+    "tag": ["函数类型", "返回值约束", "类型限制"]
+  },
+  {
+    "question": "never类型的特殊用途",
+    "description": "说明never类型在抛出异常函数或无限循环函数中的类型推断规则。如何利用never类型实现穷尽性检查（Exhaustiveness checking）？",
+    "tag": ["类型推断", "控制流分析", "模式匹配"]
+  },
+  {
+    "question": "object与Object类型区别",
+    "description": "为什么说使用object类型比Object更符合类型安全原则？解释{}空对象类型与Object.prototype属性继承的关系。",
+    "tag": ["对象类型", "类型范围", "原型链"]
+  },
+  {
+    "question": "any与unknown类型对比",
+    "description": "从类型断言必要性、方法调用限制等角度，说明unknown类型相比any如何提升代码安全性。给出将unknown安全转换为具体类型的推荐方案。",
+    "tag": ["类型安全", "类型断言", "防御式编程"]
+  },
+  {
+    "question": "对象类型定义方式对比",
+    "description": "如何通过interface和type分别定义包含name属性和age属性的对象类型？在可选属性、只读属性定义语法上两者有何异同？",
+    "tag": ["接口设计", "类型别名", "对象结构"]
+  },
+  {
+    "question": "接口继承特性",
+    "description": "演示通过extends关键字实现接口多重继承，并说明同名属性类型冲突时的处理规则。接口继承与交叉类型（&）有何本质区别？",
+    "tag": ["接口扩展", "类型组合", "冲突解决"]
+  },
+  {
+    "question": "类型别名联合与交叉运算",
+    "description": "如何用type定义包含字符串字面量联合类型（如'success'|'error'）？说明类型别名在条件类型（Conditional Types）中的运算能力。",
+    "tag": ["联合类型", "交叉类型", "类型运算"]
+  },
+  {
+    "question": "接口与类型别名核心区别",
+    "description": "从声明合并（Declaration merging）、可扩展性等角度，说明何时应优先选择interface而非type定义对象类型。",
+    "tag": ["类型系统", "声明合并", "设计模式"]
+  },
+  {
+    "question": "模块化类型导入导出",
+    "description": "如何在.ts文件中使用import/export语法实现类型共享？对比全局声明（declare global）与模块化声明的适用场景。",
+    "tag": ["模块化", "类型导出", "全局类型"]
+  },
+  {
+    "question": "类成员可见性修饰符",
+    "description": "TypeScript中public/private/protected修饰符如何控制类成员的访问权限？请说明protected成员在子类中的访问规则，以及private字段在运行时实际实现方式（如编译为WeakMap）",
+    "tag": ["面向对象", "访问控制", "编译策略"]
+  },
+  {
+    "question": "static修饰符的静态成员特性",
+    "description": "静态成员与实例成员在内存分配上有何本质区别？如何通过类名直接访问静态方法，并解释静态属性在单例模式中的典型应用场景",
+    "tag": ["静态成员", "内存管理", "设计模式"]
+  },
+  {
+    "question": "readonly修饰符初始化限制",
+    "description": "为什么readonly属性必须在声明时或构造函数中初始化？对比const与readonly的差异，说明readonly在接口/类型别名中的运行时不可变性保障",
+    "tag": ["不可变性", "类型约束", "初始化规则"]
+  },
+  {
+    "question": "抽象类与接口实现差异",
+    "description": "从方法实现强制性与多继承能力角度，说明抽象类（abstract class）与接口（interface）的核心差异。为何接口不能定义私有成员而抽象类可以？",
+    "tag": ["抽象类", "接口契约", "多态实现"]
+  },
+  {
+    "question": "泛型基础与类型约束",
+    "description": "如何通过<T extends object>语法约束泛型参数类型？给出实现泛型函数identity<T>(arg: T): T的示例，并解释类型擦除对运行时的影响",
+    "tag": ["泛型编程", "类型参数", "类型擦除"]
+  },
+  {
+    "question": "条件类型与infer关键字",
+    "description": "解析TypeScript中T extends U ? X : Y的条件类型语法，说明infer关键字在提取函数返回类型（如ReturnType）等高级类型中的关键作用",
+    "tag": ["条件类型", "类型推断", "工具类型"]
+  },
+  {
+    "question": "映射类型实现原理",
+    "description": "如何通过{ [P in keyof T]: boolean }创建将对象属性全部转为布尔值的映射类型？说明Partial/Readonly等内置映射类型的底层实现逻辑",
+    "tag": ["类型映射", "属性遍历", "内置工具"]
+  },
+  {
+    "question": "模板字面量类型特性",
+    "description": "使用`${'left'|'right'}-${'top'|'bottom'}`定义CSS定位类型，说明模板字面量类型如何增强字符串字面量类型的组合表达能力",
+    "tag": ["字面量类型", "字符串模板", "类型组合"]
+  },
+  {
+    "question": "keyof操作符类型索引",
+    "description": "keyof T如何获取对象类型T的所有键组成的联合类型？举例说明其在实现Pick<T, K extends keyof T>等工具类型中的关键作用",
+    "tag": ["索引类型", "键集合", "类型操作"]
+  },
+  {
+    "question": "typeof操作符类型推导",
+    "description": "如何通过typeof获取变量或对象的运行时类型？解释const obj = { a: 1 }; type ObjType = typeof obj 的类型推导结果及其在类型复用中的价值",
+    "tag": ["类型推导", "类型复用", "类型查询"]
+  },
+  {
+    "question": "索引访问类型深度提取",
+    "description": "如何通过T[K]语法递归提取嵌套对象类型？举例说明如何获取接口中深层属性类型（如User['address']['city']）及其在类型体操中的高级应用",
+    "tag": ["类型操作", "深度访问", "递归类型"]
+  },
+  {
+    "question": "Awaited工具类型作用",
+    "description": "Awaited<T>如何递归解析Promise的返回值类型？说明在处理异步函数链式调用时，该工具类型如何准确推断最终结果类型",
+    "tag": ["异步类型", "Promise解析", "递归解包"]
+  },
+  {
+    "question": "Partial工具类型作用",
+    "description": "Partial<T>如何将对象类型所有属性转为可选？举例说明在表单编辑场景中，如何利用Partial实现部分字段更新类型校验",
+    "tag": ["内置工具类型", "属性修饰", "部分更新"]
+  },
+  {
+    "question": "Required工具类型作用",
+    "description": "Required<T>如何强制所有可选属性变为必选？结合数据库实体校验场景，说明该工具类型在严格数据完整性检查中的应用",
+    "tag": ["必选属性", "数据校验", "类型转换"]
+  },
+  {
+    "question": "Pick工具类型作用",
+    "description": "Pick<T, K>如何从类型T中选取指定键集合K的子集？演示在API响应中仅选择用户ID和姓名字段的类型定义方法",
+    "tag": ["属性选择", "类型投影", "字段过滤"]
+  },
+  {
+    "question": "Record工具类型作用",
+    "description": "Record<K, V>如何定义键类型为K、值类型为V的对象结构？举例说明在定义枚举映射表时，如何约束键值对类型",
+    "tag": ["键值约束", "字典类型", "映射表"]
+  },
+  {
+    "question": "Exclude工具类型作用",
+    "description": "Exclude<T, U>如何从联合类型T中排除可赋值给U的类型？举例过滤掉字符串类型中的空值（'a'|'b'|null → 'a'|'b'）",
+    "tag": ["联合过滤", "类型排除", "集合运算"]
+  },
+  {
+    "question": "Extract工具类型作用",
+    "description": "Extract<T, U>如何提取联合类型T中可赋值给U的子类型？演示从多种事件类型中提取鼠标事件类型的场景",
+    "tag": ["类型提取", "联合筛选", "模式匹配"]
+  },
+  {
+    "question": "Omit工具类型作用",
+    "description": "Omit<T, K>如何实现从类型T中删除指定键集合K？说明在删除密码字段等敏感信息时的类型安全实践",
+    "tag": ["属性排除", "安全擦除", "类型裁剪"]
+  },
+  {
+    "question": "NonNullable工具类型作用",
+    "description": "NonNullable<T>如何过滤掉类型T中的null和undefined？结合GraphQL非空字段校验，说明该工具类型的数据净化作用",
+    "tag": ["空值过滤", "数据净化", "非空断言"]
+  },
+  {
+    "question": "Parameters工具类型作用",
+    "description": "Parameters<T>如何提取函数类型T的参数元组类型？演示在获取API请求函数参数类型时的应用",
+    "tag": ["参数提取", "函数类型", "高阶类型"]
+  },
+  {
+    "question": "ConstructorParameters工具类型作用",
+    "description": "ConstructorParameters<T>如何获取构造函数类型的参数元组？举例说明在工厂模式中动态创建类实例时的类型推导",
+    "tag": ["构造函数", "工厂模式", "参数推断"]
+  },
+  {
+    "question": "ReturnType工具类型作用",
+    "description": "ReturnType<T>如何推断函数类型T的返回值类型？结合API响应类型提取场景，说明其在类型安全中的价值",
+    "tag": ["返回值推断", "API类型", "响应处理"]
+  },
+  {
+    "question": "InstanceType工具类型作用",
+    "description": "InstanceType<T>如何获取构造函数类型的实例类型？演示在泛型工厂函数中动态返回类实例类型的实现方法",
+    "tag": ["实例类型", "工厂函数", "类构造"]
+  },
+  {
+    "question": "NoInfer工具类型作用",
+    "description": "NoInfer<T>如何阻止类型参数被自动推断？说明在泛型约束中避免TS优先使用上下文类型的特殊场景",
+    "tag": ["类型推断控制", "泛型约束", "类型优先级"]
+  },
+  {
+    "question": "ThisParameterType工具类型作用",
+    "description": "ThisParameterType<T>如何提取函数类型中this参数的类型？举例在装饰器中保留原方法this上下文的类型处理",
+    "tag": ["this类型", "上下文绑定", "装饰器模式"]
+  },
+  {
+    "question": "OmitThisParameter工具类型作用",
+    "description": "OmitThisParameter<T>如何移除函数类型中的this参数？说明在高阶函数中消除this依赖时的类型安全处理",
+    "tag": ["this移除", "函数转换", "上下文解耦"]
+  },
+  {
+    "question": "ThisType工具类型作用",
+    "description": "ThisType<T>如何指定对象字面量中方法的this上下文？结合Vue选项式API的this类型增强，说明其实现原理",
+    "tag": ["上下文类型", "this绑定", "框架集成"]
+  },
+  {
+    "question": "TypeScript核心优势与特性",
+    "description": "相较于JavaScript，TypeScript通过哪些核心特性（如静态类型系统、工具链支持）显著提升开发体验？请列举至少三个典型优势，并说明接口、泛型等特性如何促进大型项目维护。",
+    "tag": ["静态类型", "可维护性", "语言特性"]
+  },
+  {
+    "question": "类型声明文件管理规范",
+    "description": "如何规范管理项目中的.d.ts类型声明文件？从第三方库@types安装、自定义全局类型声明、模块扩展等场景，说明类型查找策略及tsconfig.json中typeRoots配置的作用。",
+    "tag": ["类型声明", "模块解析", "第三方集成"]
+  },
+  {
+    "question": "类型守卫实现方式",
+    "description": "除typeof/instanceof外，如何通过用户自定义类型守卫（User-Defined Type Guards）和in操作符实现类型收窄？请演示区分联合类型（如Cat|Dog）的代码实现及类型推断过程。",
+    "tag": ["类型收窄", "流程分析", "类型安全"]
+  },
+  {
+    "question": "声明合并机制应用",
+    "description": "解释接口合并与命名空间合并的触发条件，举例说明如何通过声明合并为第三方库（如Vue插件）扩展自定义属性类型。",
+    "tag": ["类型扩展", "模块增强", "多声明合并"]
+  },
+  {
+    "question": "渐进式类型迁移策略",
+    "description": "在现有JavaScript项目中逐步引入TypeScript时，如何通过allowJs/checkJs配置实现渐进迁移？列举迁移过程中处理无类型第三方库的三种解决方案（如快速any标注、补充声明文件等）。",
+    "tag": ["项目迁移", "类型适配", "兼容性配置"]
+  }
+]

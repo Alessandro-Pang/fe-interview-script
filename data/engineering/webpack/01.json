@@ -1,0 +1,162 @@
+[
+  {
+    "question": "Webpack及其核心作用",
+    "description": "请解释Webpack是什么，它的核心功能是什么？能否举例说明它在现代前端开发中的典型应用场景？",
+    "tag": ["打包工具", "模块化", "前端工程化"]
+  },
+  {
+    "question": "Webpack核心原理",
+    "description": "能否详细描述Webpack的内部工作原理？例如，它是如何通过依赖图（Dependency Graph）处理模块间的引用关系，以及如何将代码转换为最终产物？",
+    "tag": ["构建流程", "模块化", "原理"]
+  },
+  {
+    "question": "Webpack中的bundle、chunk和module的区别",
+    "description": "请解释Webpack中的三个核心概念：module、chunk和bundle，分别说明它们的定义、生成时机以及在构建流程中的作用。",
+    "tag": ["核心概念", "构建流程", "模块化"]
+  },
+  {
+    "question": "Webpack生命周期（构建流程）",
+    "description": "请描述Webpack从启动到完成构建的完整生命周期，包括初始化配置、模块解析、代码编译、依赖优化等关键阶段。",
+    "tag": ["构建流程", "生命周期", "优化"]
+  },
+  {
+    "question": "Webpack支持的模块规范及import与require处理",
+    "description": "Webpack支持哪些JavaScript模块规范（如CommonJS/ESM）？它如何处理`import`和`require`的语法差异？是否会将它们转换为统一的格式？",
+    "tag": ["模块规范", "编译", "兼容性"]
+  },
+  {
+    "question": "Webpack中--config选项的作用",
+    "description": "在运行Webpack时，`--config`选项的具体用途是什么？如果项目中存在多个配置文件，如何通过该选项指定自定义配置？",
+    "tag": ["配置", "命令行", "自定义"]
+  },
+  {
+    "question": "Loader和Plugin的区别",
+    "description": "Loader和Plugin在Webpack中各扮演什么角色？请举例说明两者的典型使用场景及差异。",
+    "tag": ["核心概念", "扩展机制", "资源处理"]
+  },
+  {
+    "question": "常见Loader及CSS-Loader与Style-Loader区别",
+    "description": "列举3个常用的Webpack Loader，并重点说明`css-loader`和`style-loader`的功能差异，以及为何通常需要同时使用它们？",
+    "tag": ["Loader", "CSS处理", "依赖管理"]
+  },
+  {
+    "question": "编写自定义Loader或Plugin",
+    "description": "如果需要为Webpack编写一个自定义Loader或Plugin，你会如何实现？请简要描述开发流程和核心API的使用方法。",
+    "tag": ["扩展开发", "自定义逻辑", "构建优化"]
+  },
+  {
+    "question": "Webpack处理内联CSS/SASS/图片资源",
+    "description": "如何配置Webpack以支持内联CSS/SASS样式和图片资源？请提供具体的Loader配置示例并解释其作用。",
+    "tag": ["配置", "资源处理", "Loader"]
+  },
+  {
+    "question": "File-Loader与URL-Loader的区别",
+    "description": "请对比`file-loader`和`url-loader`的功能差异，并说明在何种场景下应优先选择其中一种？",
+    "tag": ["资源处理", "Loader", "性能优化"]
+  },
+  {
+    "question": "Webpack多页与单页应用配置",
+    "description": "如何通过Webpack分别支持多页应用（MPA）和单页应用（SPA）？请说明两者的配置差异，例如入口文件、HTML模板生成策略及输出文件结构的区别。",
+    "tag": ["多页应用", "配置", "入口优化"]
+  },
+  {
+    "question": "Webpack按需加载实现",
+    "description": "如何通过Webpack实现代码的按需加载（异步加载）？请结合动态`import()`语法或`require.ensure`方法，描述其配置方式及生成的分块文件逻辑。",
+    "tag": ["代码分割", "性能优化", "异步加载"]
+  },
+  {
+    "question": "Webpack的Tree Shaking机制",
+    "description": "Webpack的Tree Shaking机制是如何工作的？请解释其依赖的ES模块静态分析原理，以及如何通过配置和代码规范确保未使用代码被正确消除。",
+    "tag": ["Tree Shaking", "优化", "ESM"]
+  },
+  {
+    "question": "Webpack打包速度与体积优化",
+    "description": "列举3种优化Webpack打包速度和输出文件体积的常用策略，并说明其实现原理（如缓存、并行处理、代码压缩、动态加载等）。",
+    "tag": ["性能优化", "构建速度", "压缩"]
+  },
+  {
+    "question": "Webpack持久化缓存配置",
+    "description": "如何通过Webpack实现持久化缓存？请说明如何配置文件名哈希（如`[contenthash]`）以及如何设计缓存策略以提升用户二次加载速度。",
+    "tag": ["缓存策略", "部署优化", "文件名哈希"]
+  },
+  {
+    "question": "Webpack公共代码抽取",
+    "description": "如何使用`SplitChunksPlugin`抽取公共代码（如工具库）并独立打包第三方依赖？请提供配置示例并解释其适用场景。",
+    "tag": ["代码分割", "依赖管理", "性能优化"]
+  },
+  {
+    "question": "Webpack独立打包JS/CSS/HTML",
+    "description": "如何配置Webpack将JS、CSS和HTML分别打包为独立文件？请说明如何结合`MiniCssExtractPlugin`和`HtmlWebpackPlugin`实现多资源分离输出。",
+    "tag": ["资源分离", "多文件输出", "配置"]
+  },
+  {
+    "question": "Webpack与LocalStorage离线缓存",
+    "description": "如何通过LocalStorage实现Webpack打包后的静态资源离线缓存？请描述资源预加载、版本控制及缓存更新的实现思路。",
+    "tag": ["离线缓存", "资源管理", "LocalStorage"]
+  },
+  {
+    "question": "webpack-dev-server的作用与原理",
+    "description": "请解释`webpack-dev-server`的核心功能及其启动原理，包括如何通过内存文件系统提供实时服务，并与HMR热更新机制的协作流程。",
+    "tag": ["开发服务器", "HMR", "实时编译"]
+  },
+  {
+    "question": "webpack-dev-server端口与跨域配置",
+    "description": "如何配置`webpack-dev-server`的端口号和代理规则以解决跨域问题？请提供`devServer.port`和`devServer.proxy`的配置示例。",
+    "tag": ["开发配置", "跨域", "代理"]
+  },
+  {
+    "question": "Live-Reload与HMR热更新区别",
+    "description": "对比Live-Reload（全量刷新）与HMR（模块热替换）的差异，并说明Webpack中HMR的实现原理（如更新信号推送、模块替换逻辑）。",
+    "tag": ["热更新", "开发效率", "HMR原理"]
+  },
+  {
+    "question": "提升HMR热更新效率",
+    "description": "如何优化Webpack开发环境的热更新速度？请列举配置项（如`hotOnly:true`）或工具（如`react-fast-refresh`）的优化手段及其原理。",
+    "tag": ["HMR优化", "开发体验", "配置"]
+  },
+  {
+    "question": "Ant Design按需加载配置",
+    "description": "如何在Webpack中实现Ant Design组件的按需加载？请说明如何通过Babel插件（如`babel-plugin-import`）或Tree Shaking优化打包体积，并避免全量引入样式文件。",
+    "tag": ["按需加载", "优化", "第三方库"]
+  },
+  {
+    "question": "Webpack与Vue/React项目集成",
+    "description": "如何将Webpack与Vue或React项目深度集成？请描述处理单文件组件（Vue）、JSX语法（React）所需的Loader配置，以及框架特定的优化插件（如`VueLoaderPlugin`）。",
+    "tag": ["框架集成", "配置", "构建流程"]
+  },
+  {
+    "question": "Webpack与构建工具对比",
+    "description": "对比Webpack与Grunt/Gulp、Rollup、Parcel、Vite的优缺点，并说明各自适用的场景（如库开发、应用构建、开发体验等）。",
+    "tag": ["构建工具对比", "性能优化", "生态"]
+  },
+  {
+    "question": "Vite与Webpack热更新差异",
+    "description": "Vite和Webpack在热更新（HMR）机制上有何根本区别？请从ES模块原生支持、依赖预构建、更新粒度等方面分析两者的实现差异。",
+    "tag": ["热更新机制", "构建工具对比", "开发体验"]
+  },
+  {
+    "question": "html-webpack-plugin的作用与配置",
+    "description": "`html-webpack-plugin`在Webpack中的作用是什么？如何通过它生成多页面HTML模板并解决资源路径注入、自定义变量替换等配置问题？",
+    "tag": ["插件配置", "HTML处理", "资源注入"]
+  },
+  {
+    "question": "Webpack整合Monaco Editor",
+    "description": "如何配置Webpack以整合Monaco Editor等复杂第三方库？请说明如何处理其依赖的AMD模块、多语言包或大体积静态资源加载问题。",
+    "tag": ["第三方库整合", "资源处理", "配置"]
+  },
+  {
+    "question": "publicPath配置的作用",
+    "description": "Webpack中的`publicPath`配置项具体影响哪些场景？请举例说明它在CDN部署、资源加载路径修复或子目录发布时的关键作用。",
+    "tag": ["部署配置", "路径管理", "静态资源"]
+  },
+  {
+    "question": "条件组件的按需打包",
+    "description": "如何实现基于环境变量或运行条件的组件按需打包？请通过`DefinePlugin`结合动态`import()`语法说明代码分割和条件加载的实现方案。",
+    "tag": ["代码分割", "条件加载", "环境变量"]
+  },
+  {
+    "question": "CSS代码结构优化",
+    "description": "如何通过组织CSS代码结构（如模块化、预处理器嵌套规则）提升Webpack构建效率？请结合`css-loader`、`postcss-loader`等工具说明优化策略。",
+    "tag": ["CSS优化", "构建效率", "代码组织"]
+  }
+]

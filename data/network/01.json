@@ -1,0 +1,232 @@
+[
+  {
+    "question": "浏览器多进程架构与进程职责",
+    "description": "现代浏览器采用多进程架构设计，请说明浏览器主进程、渲染进程、GPU进程、插件进程等核心进程的职责分工，并解释多进程架构如何提升安全性和稳定性。",
+    "tag": ["浏览器架构", "进程隔离", "资源管理"]
+  },
+  {
+    "question": "关键渲染流程阶段解析",
+    "description": "从HTML解析到像素绘制，详细描述渲染引擎构建DOM树、CSSOM树、布局树（Layout Tree）、分层树（Layer Tree）和绘制列表（Paint）的核心步骤，说明这些阶段如何协同完成页面渲染。",
+    "tag": ["渲染引擎", "页面渲染", "渲染流水线"]
+  },
+  {
+    "question": "重排与重绘的优化策略",
+    "description": "哪些DOM操作会触发重排（Reflow）？哪些仅导致重绘（Repaint）？请列举至少三种减少重排的优化方案（如批量DOM修改、脱离文档流处理等），并说明浏览器的渲染队列合并机制。",
+    "tag": ["性能优化", "渲染机制", "DOM操作"]
+  },
+  {
+    "question": "事件循环与任务队列管理",
+    "description": "结合宏任务（macrotask）与微任务（microtask）的执行顺序，解析浏览器事件循环如何调度setTimeout、Promise、MutationObserver等异步任务。说明渲染帧（requestAnimationFrame）与事件循环的协作关系。",
+    "tag": ["事件循环", "异步机制", "任务调度"]
+  },
+  {
+    "question": "Chrome版本通道特性差异",
+    "description": "Chrome浏览器的Stable、Beta、Dev、Canary四个版本通道在功能迭代周期上有何区别？从实验性API支持、稳定性风险等角度说明各版本的目标用户群体。",
+    "tag": ["浏览器版本", "发布策略", "特性试验"]
+  },
+  {
+    "question": "HTTP协议版本核心特性对比",
+    "description": "从连接复用、头部压缩、传输效率等维度，对比HTTP/1.1的管线化、HTTP/2的多路复用、HTTP/3的QUIC协议等核心改进，说明各版本解决的关键性能瓶颈。",
+    "tag": ["HTTP协议", "网络优化", "协议演进"]
+  },
+  {
+    "question": "HTTPS加密握手流程解析",
+    "description": "详述TLS握手过程中客户端与服务端的交互步骤（如密码套件协商、证书验证、密钥交换等），说明前向安全性（Forward Secrecy）在DH密钥交换中的实现原理。",
+    "tag": ["HTTPS", "加密协议", "安全通信"]
+  },
+  {
+    "question": "强缓存与协商缓存机制",
+    "description": "通过Cache-Control/Expires和Last-Modified/ETag两组头部，说明强缓存与协商缓存的触发条件及验证流程。为何推荐使用immutable指令优化缓存策略？",
+    "tag": ["HTTP缓存", "缓存策略", "性能优化"]
+  },
+  {
+    "question": "HTTP状态码分类与语义",
+    "description": "解释2xx（成功）、3xx（重定向）、4xx（客户端错误）、5xx（服务端错误）的状态码分类原则，并举例说明301/302/307重定向状态码的应用场景差异。",
+    "tag": ["HTTP协议", "状态码", "RESTful"]
+  },
+  {
+    "question": "HTTP请求方法语义规范",
+    "description": "根据RFC规范，GET、POST、PUT、DELETE等请求方法在幂等性（Idempotent）和安全性（Safe）上有何本质区别？在RESTful API设计中应如何正确应用PATCH方法？",
+    "tag": ["HTTP方法", "RESTful设计", "API规范"]
+  },
+  {
+    "question": "CDN边缘缓存与资源分发策略",
+    "description": "CDN如何通过边缘节点实现就近资源缓存？说明内容分发策略（如静态资源预热、动态内容加速）的核心原理及对首屏加载性能的优化价值。",
+    "tag": ["CDN原理", "缓存策略", "内容分发"]
+  },
+  {
+    "question": "浏览器多级缓存层级结构",
+    "description": "浏览器缓存系统包含Memory Cache、Disk Cache、Service Worker等多级存储，请分析各级缓存的容量限制、生命周期差异及其在离线应用中的协同机制。",
+    "tag": ["缓存层级", "存储策略", "离线能力"]
+  },
+  {
+    "question": "Nginx缓存配置与失效机制",
+    "description": "如何通过proxy_cache_path配置Nginx反向代理缓存？说明基于缓存键（cache_key）的精细化控制策略及主动清除缓存的purge模块实现原理。",
+    "tag": ["Nginx配置", "服务端缓存", "失效机制"]
+  },
+  {
+    "question": "ETag与Last-Modified校验对比",
+    "description": "对比ETag（实体标签）的强/弱校验与Last-Modified时间戳校验的精度差异，解释为何ETag能更精准地检测资源变化但可能增加计算开销。",
+    "tag": ["缓存验证", "条件请求", "资源指纹"]
+  },
+  {
+    "question": "Cache-Control指令集详解",
+    "description": "解析max-age、no-cache、no-store、must-revalidate等Cache-Control指令的优先级关系，并给出电商页面与静态资源站点的差异化缓存策略设计示例。",
+    "tag": ["缓存控制", "HTTP头部", "策略设计"]
+  },
+  {
+    "question": "TCP三次握手与四次挥手",
+    "description": "结合SYN、ACK标志位与序列号交换机制，详述TCP连接建立（三次握手）和断开（四次挥手）过程中客户端与服务端的状态迁移路径。说明TIME_WAIT状态存在的必要性。",
+    "tag": ["TCP协议", "连接管理", "状态机"]
+  },
+  {
+    "question": "TCP与UDP协议特性对比",
+    "description": "从可靠性、传输效率、连接方式等维度对比TCP与UDP的核心差异，举例说明视频流媒体（UDP）与金融交易（TCP）场景下的协议选型依据。",
+    "tag": ["传输协议", "可靠性保障", "场景适配"]
+  },
+  {
+    "question": "滑动窗口与流量控制",
+    "description": "TCP滑动窗口如何通过ACK确认与窗口大小通告实现流量控制？结合拥塞控制算法（如慢启动、拥塞避免）说明其对网络带宽的动态适应机制。",
+    "tag": ["流量控制", "拥塞算法", "传输优化"]
+  },
+  {
+    "question": "网络分层模型核心职责",
+    "description": "对比OSI七层模型与TCP/IP四层模型的对应关系，说明应用层（HTTP）、传输层（TCP）、网络层（IP）、链路层（MAC）的核心功能及协议栈封装过程。",
+    "tag": ["网络模型", "协议栈", "分层架构"]
+  },
+  {
+    "question": "QUIC协议与HTTP/3性能优势",
+    "description": "QUIC协议如何通过UDP实现可靠传输及零RTT握手？分析多路复用、连接迁移等特性对HTTP/3在弱网环境下性能提升的具体贡献。",
+    "tag": ["QUIC协议", "HTTP/3", "网络优化"]
+  },
+  {
+    "question": "XSS攻击防御与CSP策略",
+    "description": "请说明反射型、存储型、DOM型XSS的攻击原理差异，并详细阐述内容安全策略（CSP）如何通过白名单机制限制脚本加载源，以及输入过滤与输出编码的联合防御方案。",
+    "tag": ["Web安全", "XSS防护", "CSP策略"]
+  },
+  {
+    "question": "CSRF攻击Token验证机制",
+    "description": "解释CSRF攻击如何利用用户已认证状态伪造请求，说明双重Cookie验证与服务器端Token校验的实现原理，以及SameSite Cookie属性在防御中的作用。",
+    "tag": ["Web安全", "CSRF防护", "请求验证"]
+  },
+  {
+    "question": "HTTPS中间人攻击防护",
+    "description": "中间人攻击如何劫持HTTPS连接？详述浏览器校验证书链完整性与证书吊销列表（CRL/OCSP）校验的流程，说明HSTS头部如何强制启用HTTPS。",
+    "tag": ["网络安全", "HTTPS", "证书校验"]
+  },
+  {
+    "question": "点击劫持与X-Frame防护",
+    "description": "点击劫持（Clickjacking）如何通过iframe覆盖诱导用户操作？说明X-Frame-Options的DENY/SAMEORIGIN策略及CSP的frame-ancestors指令的优先级关系。",
+    "tag": ["Web安全", "点击劫持", "HTTP头部"]
+  },
+  {
+    "question": "资源加载性能优化",
+    "description": "对比preload/prefetch/dns-prefetch资源提示的适用场景，说明HTTP/2 Server Push如何减少RTT延迟，以及图片懒加载的IntersectionObserver实现方案。",
+    "tag": ["加载优化", "资源提示", "HTTP/2"]
+  },
+  {
+    "question": "同源策略与跨域解决方案",
+    "description": "浏览器的同源策略如何限制跨域请求？请对比CORS（预检请求/简单请求）、反向代理、JSONP等方案的实现原理及安全性差异，说明何时应优先选择CORS的withCredentials凭证模式。",
+    "tag": ["同源策略", "跨域请求", "安全策略"]
+  },
+  {
+    "question": "Cookie安全属性配置策略",
+    "description": "解释SameSite=Lax/Strict对CSRF防护的作用，结合HttpOnly与Secure属性说明如何构建防御纵深。为何在部分浏览器中SameSite默认值调整为Lax？",
+    "tag": ["Cookie安全", "CSRF防护", "SameSite策略"]
+  },
+  {
+    "question": "JWT认证机制实现原理",
+    "description": "解析JWT的Header-Payload-Signature结构，说明如何通过HMAC或RSA签名防止令牌篡改。为何推荐结合短期Token与Refresh Token实现无状态认证？",
+    "tag": ["身份认证", "JWT", "令牌安全"]
+  },
+  {
+    "question": "OAuth2.0授权码模式流程",
+    "description": "详述OAuth2.0授权码模式中客户端、授权服务器、资源服务器的交互步骤，说明PKCE扩展如何防范授权码拦截攻击，并分析隐式模式的安全风险。",
+    "tag": ["OAuth2.0", "授权机制", "安全实践"]
+  },
+  {
+    "question": "WebAssembly性能优化场景",
+    "description": "如何通过Rust/C++编译为WebAssembly实现高性能计算？举例说明在图像处理、物理仿真等场景中，WebAssembly相比JavaScript的性能优势及与JS的互操作方式。",
+    "tag": ["WebAssembly", "性能优化", "跨语言交互"]
+  },
+  {
+    "question": "SSE与WebSocket协议对比",
+    "description": "从协议层面对比Server-Sent Events（HTTP长连接）与WebSocket（全双工TCP）的通信模式差异，说明SSE在实时通知场景的优势及WebSocket在双向通信中的不可替代性。",
+    "tag": ["实时通信", "协议对比", "SSE/WebSocket"]
+  },
+  {
+    "question": "常见HTTP请求头作用详解",
+    "description": "列举Accept、Content-Type、Authorization等常用HTTP请求头的核心作用，说明Accept-Encoding与Content-Encoding在内容协商过程中的协同机制及浏览器兼容性处理。",
+    "tag": ["HTTP协议", "请求头", "内容协商"]
+  },
+  {
+    "question": "内容编码与传输优化策略",
+    "description": "对比gzip、deflate、Brotli(br)算法的压缩效率与CPU消耗差异，说明如何通过Nginx配置动态选择最优编码方式以提升资源传输性能。",
+    "tag": ["内容编码", "压缩算法", "性能优化"]
+  },
+  {
+    "question": "分块传输编码实现原理",
+    "description": "解析Transfer-Encoding: chunked如何实现流式数据传输，说明分块编码在实时数据推送与大文件下载场景下的优势及与Content-Length的互斥关系。",
+    "tag": ["分块传输", "流式传输", "HTTP协议"]
+  },
+  {
+    "question": "预检请求触发条件与优化",
+    "description": "哪些跨域请求会触发OPTIONS预检请求？如何通过Access-Control-Max-Age减少预检次数？列举简单请求（Simple Request）的严格条件。",
+    "tag": ["跨域请求", "CORS", "性能优化"]
+  },
+  {
+    "question": "文件上传协议实现方案",
+    "description": "对比multipart/form-data格式与二进制流直传的适用场景，说明如何通过FormData对象实现多文件上传及进度监控功能。",
+    "tag": ["文件上传", "HTTP协议", "表单处理"]
+  },
+  {
+    "question": "对称与非对称加密算法对比",
+    "description": "从密钥管理、运算速度、安全性等角度对比AES（对称）与RSA（非对称）的差异，说明ECC椭圆曲线加密在移动端的性能优势。",
+    "tag": ["加密算法", "安全通信", "HTTPS"]
+  },
+  {
+    "question": "数字签名与证书链验证",
+    "description": "详述数字签名如何通过私钥签名与公钥验证实现数据完整性校验，解释浏览器如何验证证书链的合法性及根证书信任机制。",
+    "tag": ["数字签名", "证书链", "TLS/SSL"]
+  },
+  {
+    "question": "TLS协议版本演进与兼容性",
+    "description": "对比SSL 3.0与TLS 1.2/1.3协议的安全改进（如向前加密、握手优化），说明如何禁用不安全协议版本以应对POODLE等攻击。",
+    "tag": ["TLS/SSL", "协议安全", "兼容性"]
+  },
+  {
+    "question": "HTTPS混合加密工作流程",
+    "description": "解释HTTPS如何通过非对称加密交换对称密钥，再使用对称加密传输数据的混合体系，说明前向保密（Forward Secrecy）的实现原理。",
+    "tag": ["HTTPS", "加密体系", "安全通信"]
+  },
+  {
+    "question": "国密算法应用场景解析",
+    "description": "介绍SM2（非对称）、SM3（哈希）、SM4（对称）等国密算法在金融、政务领域的应用实践，说明与国际标准算法的替代方案。",
+    "tag": ["国密算法", "安全标准", "加密技术"]
+  },
+  {
+    "question": "DNS解析过程详解",
+    "description": "描述DNS递归查询与迭代查询的流程差异，说明本地DNS、根域名服务器、权威DNS在解析过程中的层级协作机制。",
+    "tag": ["DNS解析", "域名系统", "网络协议"]
+  },
+  {
+    "question": "CDN的DNS调度策略",
+    "description": "CDN如何通过DNS解析将用户请求路由至最优边缘节点？解释基于地理位置、网络状况、负载均衡的智能调度算法实现。",
+    "tag": ["CDN", "DNS调度", "内容分发"]
+  },
+  {
+    "question": "域名劫持与HTTPDNS方案",
+    "description": "分析传统DNS的UDP协议劫持风险，说明HTTPDNS如何通过API查询绕过LocalDNS，并实现客户端IP精准调度以提升访问速度。",
+    "tag": ["域名劫持", "DNS安全", "移动网络"]
+  },
+  {
+    "question": "IPv4与IPv6协议差异",
+    "description": "对比IPv4（32位）与IPv6（128位）的地址空间、报头结构、QoS支持等核心差异，说明双栈技术、隧道技术等过渡方案的实现原理。",
+    "tag": ["IP协议", "网络层", "IPv6迁移"]
+  },
+  {
+    "question": "反向代理与正向代理区别",
+    "description": "从使用场景、客户端感知度、功能侧重等维度，说明Nginx反向代理的负载均衡与缓存加速功能，对比Squid正向代理的匿名访问与访问控制特性。",
+    "tag": ["代理服务器", "网络架构", "Nginx"]
+  }
+]

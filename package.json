@@ -1,0 +1,23 @@
+{
+  "name": "runner",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zi.yang <pcy1314@163.com> (https://github.com/Alessandro-Pang)",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "front-matter": "^4.0.2",
+    "js-yaml": "^4.1.0",
+    "markdownlint": "^0.37.4",
+    "openai": "^4.86.1",
+    "remark": "^15.0.1",
+    "remark-parse": "^11.0.0",
+    "remark-stringify": "^11.0.0",
+    "unist-util-visit": "^5.0.0"
+  }
+}

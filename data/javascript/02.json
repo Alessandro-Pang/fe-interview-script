@@ -1,0 +1,47 @@
+[
+  {
+    "question": "箭头函数核心特性解析",
+    "description": "请详细说明ES6箭头函数与普通函数在this绑定、构造函数使用、arguments对象访问等方面的核心区别，并解释为何箭头函数不能通过new关键字实例化对象。",
+    "tag": ["ES6", "函数"]
+  },
+  {
+    "question": "Symbol类型应用场景",
+    "description": "请举例说明Symbol数据类型的三大典型应用场景（如私有属性、防止属性冲突等），并解释Symbol.for()与Symbol()创建方式的本质区别。",
+    "tag": ["ES6", "数据类型"]
+  },
+  {
+    "question": "模块系统差异对比",
+    "description": "请从加载机制、输出方式、静态分析等维度对比ES Module与CommonJS模块系统的核心差异，并说明Tree Shaking技术为何依赖ESM的静态结构特性。",
+    "tag": ["模块化", "ES6"]
+  },
+  {
+    "question": "Proxy元编程能力",
+    "description": "请通过拦截器示例（如属性访问、函数调用）演示Proxy的核心功能，并说明Reflect对象在代理操作中的协同作用及设计初衷。",
+    "tag": ["ES6", "元编程"]
+  },
+  {
+    "question": "解构赋值高级用法",
+    "description": "请演示对象/数组解构的嵌套解构、别名设置和默认值配置语法，并说明如何通过解构实现深层对象属性提取（如const { a: { b } } = obj）。",
+    "tag": ["ES6", "语法"]
+  },
+  {
+    "question": "扩展运算符应用场景",
+    "description": "请列举扩展运算符在数组拼接、函数传参、对象合并等场景中的具体应用，并对比[...arr]与Array.from()在类数组转换时的行为差异。",
+    "tag": ["ES6", "语法"]
+  },
+  {
+    "question": "rest参数机制解析",
+    "description": "请说明rest参数与arguments对象的本质区别，演示其在函数参数收集和箭头函数中的特殊使用限制，并解释为何rest参数必须作为最后一个形参。",
+    "tag": ["ES6", "函数"]
+  },
+  {
+    "question": "模板字符串增强特性",
+    "description": "请演示标签模板的调用方式及原始字符串访问能力，并说明如何通过String.raw实现转义字符的原始输出。",
+    "tag": ["ES6", "字符串"]
+  },
+  {
+    "question": "字符串处理新方法",
+    "description": "请列举includes()/startsWith()/padStart()等ES6新增字符串方法的核心功能，并对比indexOf()方法与includes()方法的性能差异及使用场景。",
+    "tag": ["ES6", "字符串"]
+  }
+]

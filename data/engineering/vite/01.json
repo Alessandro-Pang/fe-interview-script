@@ -1,0 +1,187 @@
+[
+  {
+    "question": "Vite的定义与核心目标",
+    "description": "请解释Vite是什么，并对比传统构建工具（如Webpack）的性能瓶颈，说明Vite的设计目标是如何解决开发环境启动慢、热更新延迟等问题的？",
+    "tag": ["构建工具对比", "性能优化", "开发体验"]
+  },
+  {
+    "question": "Vite工作原理与快速开发实现",
+    "description": "Vite如何基于浏览器原生ES Modules实现按需加载？请描述其开发环境下的请求处理流程，如何避免传统打包工具的全量编译？",
+    "tag": ["ESM机制", "按需加载", "构建流程"]
+  },
+  {
+    "question": "Vite模块预构建机制",
+    "description": "Vite的预构建（Pre-Bundling）如何优化第三方依赖加载？请说明将node_modules依赖转换为ESM格式的意义，以及如何减少HTTP请求数量？",
+    "tag": ["预构建", "依赖优化", "ESM转换"]
+  },
+  {
+    "question": "Vite热模块替换机制对比",
+    "description": "Vite的HMR实现与Webpack有何本质区别？请从原生ESM支持、模块更新粒度、无编译环节等角度分析其优势？",
+    "tag": ["HMR机制", "热更新优化", "原生ESM"]
+  },
+  {
+    "question": "Vite的Tree Shaking与Rollup集成",
+    "description": "Vite如何借助Rollup实现Tree Shaking？请解释其静态分析过程及如何确保未使用代码在生产构建中被剔除？",
+    "tag": ["Tree Shaking", "Rollup集成", "代码优化"]
+  },
+  {
+    "question": "Vite性能优势核心原因",
+    "description": "为什么Vite在开发环境下比Webpack更快？请从ESM原生加载、预构建、HMR机制等角度说明其核心优势？",
+    "tag": ["性能优势", "开发体验", "构建工具对比"]
+  },
+  {
+    "question": "Vite项目创建与模板支持",
+    "description": "如何通过`npm create vite@latest`命令创建新项目？Vite支持的框架模板（Vue/React等）有哪些？请说明多模板选择的实际应用场景？",
+    "tag": ["项目初始化", "模板配置", "脚手架"]
+  },
+  {
+    "question": "vite.config.js的作用与配置",
+    "description": "`vite.config.js`文件在Vite项目中的核心作用是什么？请举例说明如何自定义构建输出目录、代理规则或别名（alias）等配置？",
+    "tag": ["配置管理", "自定义设置", "构建优化"]
+  },
+  {
+    "question": "build与server配置项详解",
+    "description": "Vite的`build`和`server`配置项有哪些常见用法？例如如何配置生产构建的代码压缩、开发服务器的端口号或HTTPS支持？",
+    "tag": ["构建配置", "开发服务器", "部署优化"]
+  },
+  {
+    "question": "Vite环境变量配置方法",
+    "description": "如何在Vite中通过.env文件定义环境变量？请说明不同模式（开发/生产）下.env文件的优先级及如何通过`import.meta.env`访问变量？",
+    "tag": ["环境变量", "配置管理", "安全性"]
+  },
+  {
+    "question": "Vite对CSS预处理器的支持",
+    "description": "如何在Vite项目中集成Sass/Stylus/Less？是否需要额外安装依赖？请提供配置示例并说明预处理器编译流程？",
+    "tag": ["CSS预处理", "配置简化", "依赖管理"]
+  },
+  {
+    "question": "Vite静态资源处理策略",
+    "description": "如何配置Vite以支持图片、字体等静态资源的加载？请说明通过`import`引入或`public`目录引用的区别及适用场景？",
+    "tag": ["静态资源", "路径处理", "配置管理"]
+  },
+  {
+    "question": "Vite的Gzip与代码分割配置",
+    "description": "如何在Vite中启用Gzip压缩和代码分割（Code Splitting）？请结合`vite-plugin-compression`插件和Rollup配置说明优化方案？",
+    "tag": ["性能优化", "代码分割", "压缩策略"]
+  },
+  {
+    "question": "Vite多页应用与懒加载实现",
+    "description": "如何配置Vite支持多页应用（MPA）及组件懒加载？请说明多入口设置和动态`import()`语法的具体实现方式？",
+    "tag": ["多页应用", "懒加载", "代码分割"]
+  },
+  {
+    "question": "Vite插件机制与常见Hook",
+    "description": "请解释Vite的插件机制如何与Rollup插件系统兼容？列举Vite特有的Hook（如`config`、`transform`）及其在开发/构建流程中的作用？",
+    "tag": ["插件机制", "扩展性", "构建流程"]
+  },
+  {
+    "question": "自定义Vite插件开发与执行顺序",
+    "description": "如何编写一个自定义Vite插件？如何通过`enforce`属性控制插件的执行顺序？请提供插件基本结构示例并说明优先级规则？",
+    "tag": ["插件开发", "执行优先级", "自定义逻辑"]
+  },
+  {
+    "question": "扩展Rollup配置的实践",
+    "description": "如何在Vite中修改或扩展Rollup的配置？例如通过`build.rollupOptions`调整输出格式或添加Rollup插件？",
+    "tag": ["Rollup集成", "配置扩展", "构建优化"]
+  },
+  {
+    "question": "实用Vite插件举例",
+    "description": "列举3个常用的Vite插件（如`@vitejs/plugin-legacy`、`vite-plugin-pwa`），并说明它们如何解决兼容性、PWA支持等具体问题？",
+    "tag": ["插件生态", "功能扩展", "最佳实践"]
+  },
+  {
+    "question": "Vite对Vue/React的深度支持",
+    "description": "Vite如何通过内置模板和工具链支持Vue 3的单文件组件（SFC）和React的Fast Refresh特性？请说明框架优化的核心实现？",
+    "tag": ["框架集成", "开发体验", "模板配置"]
+  },
+  {
+    "question": "Vite服务端渲染（SSR）实现",
+    "description": "如何在Vite中实现服务端渲染（SSR）？请结合`vite-plugin-ssr`或Nuxt 3的集成方案说明SSR的构建流程与配置要点？",
+    "tag": ["SSR", "服务端渲染", "框架集成"]
+  },
+  {
+    "question": "Vite的TypeScript处理机制",
+    "description": "Vite如何处理TypeScript项目？与Webpack相比，其依赖`esbuild`编译的优势是什么？是否需要额外配置`ts-loader`？",
+    "tag": ["TypeScript支持", "编译优化", "构建工具对比"]
+  },
+  {
+    "question": "Vite集成WebAssembly",
+    "description": "如何在Vite中直接导入和使用WebAssembly（Wasm）模块？请说明通过`init`函数加载.wasm文件的实现步骤？",
+    "tag": ["WebAssembly", "模块加载", "性能优化"]
+  },
+  {
+    "question": "Vite调试独立文件的方法",
+    "description": "如何在不重新构建整个项目的情况下调试Vite项目中的单个文件？请描述开发服务器的实时更新机制如何支持局部修改？",
+    "tag": ["调试技巧", "开发效率", "实时更新"]
+  },
+  {
+    "question": "Vite启动与构建性能优化",
+    "description": "如何优化Vite项目的启动时间和生产构建性能？请说明预构建依赖、缓存策略及减少插件数量的具体实践？",
+    "tag": ["性能优化", "构建速度", "缓存机制"]
+  },
+  {
+    "question": "Vite构建性能分析工具",
+    "description": "如何使用`vite-bundle-analyzer`等插件分析Vite项目的构建性能？请描述可视化包体积分析的配置步骤？",
+    "tag": ["性能分析", "可视化工具", "构建优化"]
+  },
+  {
+    "question": "Vite持久化缓存机制",
+    "description": "Vite的持久化缓存（如`.vite`目录）如何提升二次构建速度？如何通过`--force`参数手动触发缓存失效？",
+    "tag": ["缓存策略", "构建加速", "配置管理"]
+  },
+  {
+    "question": "Vite包体积优化策略",
+    "description": "列举3种减小Vite项目生产包体积的方法（如Tree Shaking、代码分割、按需加载），并说明其实现原理？",
+    "tag": ["包体积优化", "代码分割", "按需加载"]
+  },
+  {
+    "question": "Vite生产环境优化配置",
+    "description": "如何配置Vite以优化生产环境构建？例如设置`base`路径适配CDN、启用代码压缩（`build.minify`）等？",
+    "tag": ["生产部署", "CDN配置", "压缩策略"]
+  },
+  {
+    "question": "Vite与Webpack/Rollup对比",
+    "description": "请从开发体验、构建速度、插件生态、适用场景（如SPA开发与库打包）等方面对比Vite、Webpack和Rollup的优缺点，并说明各自的核心适用场景？",
+    "tag": ["构建工具对比", "性能分析", "适用场景"]
+  },
+  {
+    "question": "Vite对CommonJS模块的支持",
+    "description": "Vite是否支持CommonJS模块？如何处理项目中依赖的CommonJS第三方库？请说明预构建阶段如何自动转换CJS到ESM格式？",
+    "tag": ["模块规范", "兼容性", "预构建机制"]
+  },
+  {
+    "question": "Vite插件生态与Rollup兼容性",
+    "description": "Vite的插件生态现状如何？如何通过`rollupOptions`兼容Rollup插件？请举例说明Vite专属插件与通用Rollup插件的使用差异？",
+    "tag": ["插件生态", "Rollup集成", "扩展性"]
+  },
+  {
+    "question": "Vite开发服务器HTTPS配置",
+    "description": "如何配置Vite开发服务器以支持HTTPS？请通过`server.https`选项说明如何加载SSL证书（如`key`和`cert`文件路径）？",
+    "tag": ["开发服务器", "安全配置", "HTTPS"]
+  },
+  {
+    "question": "Vite全局常量定义方法",
+    "description": "如何在Vite中注入全局常量（如`__VERSION__`）？请使用`define`配置项说明如何替换代码中的占位符变量？",
+    "tag": ["全局变量", "配置注入", "编译替换"]
+  },
+  {
+    "question": "Vite的base配置项作用",
+    "description": "Vite的`base`配置项在项目部署时起到什么作用？请举例说明如何通过它适配CDN资源路径或子目录部署场景（如`/sub-path/`）？",
+    "tag": ["部署配置", "路径管理", "静态资源"]
+  },
+  {
+    "question": "Vite开发与生产构建差异",
+    "description": "Vite的开发版本和生产构建版本有何本质区别？例如开发模式基于原生ESM加载，而生产构建如何通过Rollup实现代码优化？",
+    "tag": ["构建流程", "开发环境", "生产优化"]
+  },
+  {
+    "question": "Vite按需加载实现方案",
+    "description": "如何通过动态`import()`语法在Vite中实现按需加载？请结合代码分割（Code Splitting）说明如何避免一次性加载所有模块？",
+    "tag": ["代码分割", "按需加载", "性能优化"]
+  },
+  {
+    "question": "Vite自定义路由解析扩展",
+    "description": "如何在Vite中扩展自定义的路由解析逻辑？例如通过插件拦截请求或修改Rollup配置实现动态路由重定向？",
+    "tag": ["路由管理", "插件扩展", "请求拦截"]
+  }
+]
